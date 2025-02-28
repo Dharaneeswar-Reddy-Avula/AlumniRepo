@@ -1,51 +1,58 @@
 import { useState } from "react"
 import { Calendar, MapPin, Users } from "lucide-react"
+import comingsoon from "../../../assets/coming soon.jpg"
 
 const Upcoming = () => {
   const [showAll, setShowAll] = useState(false)
   const events = [
     {
-      title: "Class of 2018 Reunion",
-      date: "Jan 30, 2025",
-      location: "Grand Alumni Hall, University Campus",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
-      attendees: 120,
+      // title: "Class of 2018 Reunion",
+      // date: "Jan 30, 2025",
+      // location: "Grand Alumni Hall, University Campus",
+      // image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
+      image:comingsoon,
+      // attendees: 120,
     },
-    {
-      title: "Engineering Alumni Mixer",
-      date: "Feb 15, 2025",
-      location: "TechHub Conference Center",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
-      attendees: 85,
-    },
-    {
-      title: "Business School Networking Event",
-      date: "Mar 5, 2025",
-      location: "Downtown Business Center",
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
-      attendees: 150,
-    },
-    {
-      title: "Arts and Humanities Symposium",
-      date: "Apr 20, 2025",
-      location: "University Art Gallery",
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
-      attendees: 95,
-    },
-    {
-      title: "Science Alumni Conference",
-      date: "May 10, 2025",
-      location: "Science Center Auditorium",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
-      attendees: 200,
-    },
-    {
-      title: "Global Alumni Summit",
-      date: "Jun 1, 2025",
-      location: "International Convention Center",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-      attendees: 500,
-    },
+    // {
+    //   // title: "Engineering Alumni Mixer",
+    //   // date: "Feb 15, 2025",
+    //   // location: "TechHub Conference Center",
+    //   // image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+    //   // attendees: 85,
+    //   image:comingsoon
+    // },
+    // {
+    //   // title: "Business School Networking Event",
+    //   // date: "Mar 5, 2025",
+    //   // location: "Downtown Business Center",
+    //   // image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
+    //   // attendees: 150,
+    //   image:comingsoon
+    // },
+    // {
+    //   // title: "Arts and Humanities Symposium",
+    //   // date: "Apr 20, 2025",
+    //   // location: "University Art Gallery",
+    //   // image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
+    //   // attendees: 95,
+    //   image:comingsoon
+    // },
+    // {
+    //   // title: "Science Alumni Conference",
+    //   // date: "May 10, 2025",
+    //   // location: "Science Center Auditorium",
+    //   // image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+    //   // attendees: 200,
+    //   image:comingsoon
+    // },
+    // {
+    //   // title: "Global Alumni Summit",
+    //   // date: "Jun 1, 2025",
+    //   // location: "International Convention Center",
+    //   // image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+    //   // attendees: 500,
+    //   image:comingsoon
+    // },
   ]
 
   return (

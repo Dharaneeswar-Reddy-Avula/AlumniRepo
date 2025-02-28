@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { IoShareSocialSharp } from "react-icons/io5";
 import Videoone from "../../../assets/Videoone.jpg";
+import comingsoon from "../../../assets/coming soon.jpg"
 
 const Video = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,7 +19,7 @@ const Video = () => {
   };
 
   const pho = [
-    { id: 1, image: Videoone, Event: "Alumni life in Delhi", Items: "5 items" },
+    { id: 1, image:comingsoon, Event: "Alumni life in Delhi", Items: "5 items" },
   ];
 
   return (
@@ -83,7 +84,7 @@ const Video = () => {
         </div>
 
         {/* Image Gallery */}
-        {/* <div className="flex flex-wrap gap-[20px]">
+        <div className="flex flex-wrap gap-[20px]">
           {pho.map((mem) => (
             <div
               key={mem.id}
@@ -97,16 +98,16 @@ const Video = () => {
               />
               
               <div className="flex flex-row justify-between pt-[10px] font-bold">
-                <div>{mem.Event}</div>
-                <div>{mem.Items}</div>
+                {/* <div>{mem.Event}</div>
+                <div>{mem.Items}</div> */}
               </div>
             </div>
           ))}
-        </div> */}
-        <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center ">
-          Will Update Soon
         </div>
-      </div>
+       {/* <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center ">
+          Will Update Soon
+        </div> */}
+      </div> 
     </div>
   );
 };

@@ -1,15 +1,15 @@
 import React from 'react'
 import './Goldtext.css'
 const rewards=[
-    {id:1,number:"1000+",specialization:"cxo"},
-    {id:2,number:"5799+",specialization:"ph.D"},
-    {id:3,number:"30+",specialization:"CHAPTERS"},
-    {id:4,number:"500+",specialization:"STARTUPS"},
-    {id:5,number:"35+",specialization:"UNICORNS"},
-    {id:6,number:"5000+",specialization:"ACADEMECIANS"},
-    {id:7,number:"500+",specialization:"RESEARCH"},
+    {id:1,number:"80+",specialization:"cxo"},
+    {id:2,number:"200+",specialization:"ph.D"},
+    {id:3,number:"15+",specialization:"CHAPTERS"},
+    {id:4,number:"100+",specialization:"STARTUPS"},
+    {id:5,number:"18+",specialization:"UNICORNS"},
+    {id:6,number:"500+",specialization:"ACADEMECIANS"},
+    {id:7,number:"100+",specialization:"RESEARCH"},
     {id:8,number:"200+",specialization:"AUTHORS"},
-    {id:9,number:"500+",specialization:"BUEROCRATS"}
+    {id:9,number:"1000+",specialization:"BUEROCRATS"}
     
 ];
 const Network = () => {

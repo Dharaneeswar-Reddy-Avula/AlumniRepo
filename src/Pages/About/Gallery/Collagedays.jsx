@@ -5,6 +5,7 @@ import Collagetwo from '../../../assets/Collagetwo.jpg'
 import Collagethree from '../../../assets/Collagethree.jpg'
 import Collagefour from '../../../assets/Collagefour.jpg'
 import Collageone from '../../../assets/Collageone.jpg'
+import comingsoon from "../../../assets/coming soon.jpg"
 
 const Collagedays = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -20,12 +21,34 @@ const Collagedays = () => {
     navigate(path);
   };
 
-  const pho = [
-    { id: 1, image: Collageone, Event: "Alumni life in Delhi", Items: "5 items" },
-             { id: 2, image: Collagetwo, Event: "Alumni life in Delhi", Items: "5 items" },
-             { id: 3, image: Collagethree, Event: "Alumni life in Delhi", Items: "5 items" },
-             { id: 4, image: Collagefour, Event: "Alumni life in Delhi", Items: "5 items" }
-  ];
+  // const pho = [
+  //   // { id: 1, image: Collageone, Event: "Alumni life in Delhi", Items: "5 items" },
+  //   //          { id: 2, image: Collagetwo, Event: "Alumni life in Delhi", Items: "5 items" },
+  //   //          { id: 3, image: Collagethree, Event: "Alumni life in Delhi", Items: "5 items" },
+  //   //          { id: 4, image: Collagefour, Event: "Alumni life in Delhi", Items: "5 items" }
+  // ];
+   const pho = [
+      {
+        id: 1,
+        image:comingsoon  
+    
+      },
+      {
+        id: 2,
+        image:comingsoon
+       
+      },
+      {
+        id: 3,
+        image:comingsoon
+        
+      },
+      {
+        id: 4,
+        image:comingsoon
+        
+      },
+    ];
 
   return (
     <div className="p-[10px] md:p-[30px] lg:p-[50px] mt-[100px]">
@@ -76,7 +99,7 @@ const Collagedays = () => {
         </div>
 
         {/* Image Gallery */}
-        {/* <div className="flex flex-wrap gap-[20px]">
+        <div className="flex flex-wrap gap-[20px]">
           {pho.map((mem) => (
             <div
               key={mem.id}
@@ -95,8 +118,8 @@ const Collagedays = () => {
               </div>
             </div>
           ))}
-        </div> */}
-                          <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center'>Will Update Soon</div>
+        </div>
+                          {/* <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center'>Will Update Soon</div> */}
 
 
       </div>

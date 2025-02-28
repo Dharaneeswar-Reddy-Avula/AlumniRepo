@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { IoShareSocialSharp } from "react-icons/io5";
-import Collagetwo from "../../../assets/Collagetwo.jpg";
-import Collagethree from "../../../assets/Collagethree.jpg";
-import Collagefour from "../../../assets/Collagefour.jpg";
-import Collageone from "../../../assets/Collageone.jpg";
+// import Collagetwo from "../../../assets/Collagetwo.jpg";
+// import Collagethree from "../../../assets/Collagethree.jpg";
+// import Collagefour from "../../../assets/Collagefour.jpg";
+// import Collageone from "../../../assets/Collageone.jpg";
+import comingsoon from "../../../assets/coming soon.jpg"
+
 
 const Festival = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -23,27 +25,31 @@ const Festival = () => {
   const pho = [
     {
       id: 1,
-      image: Collageone,
-      Event: "Alumni life in Delhi",
-      Items: "5 items",
+      image:comingsoon  
+    //  image: Collageone, 
+    //   Event: "Alumni life in Delhi",
+    //   Items: "5 items",
     },
     {
       id: 2,
-      image: Collagetwo,
-      Event: "Alumni life in Delhi",
-      Items: "5 items",
+      image:comingsoon
+      // image: Collagetwo,
+      // Event: "Alumni life in Delhi",
+      // Items: "5 items",
     },
     {
       id: 3,
-      image: Collagethree,
-      Event: "Alumni life in Delhi",
-      Items: "5 items",
+      image:comingsoon
+      // image: Collagethree,
+      // Event: "Alumni life in Delhi",
+      // Items: "5 items",
     },
     {
       id: 4,
-      image: Collagefour,
-      Event: "Alumni life in Delhi",
-      Items: "5 items",
+      image:comingsoon
+      // image: Collagefour,
+      // Event: "Alumni life in Delhi",
+      // Items: "5 items",
     },
   ];
 
@@ -111,7 +117,7 @@ const Festival = () => {
         </div>
 
         {/* Image Gallery */}
-        {/* <div className="flex flex-wrap gap-[20px]">
+        <div className="flex flex-wrap gap-[20px]">
           {pho.map((mem) => (
             <div
               key={mem.id}
@@ -124,16 +130,16 @@ const Festival = () => {
                 alt={mem.Event}
               />
              
-              <div className="flex flex-row justify-between pt-[10px] font-bold">
+              {/* <div className="flex flex-row justify-between pt-[10px] font-bold">
                 <div>{mem.Event}</div>
                 <div>{mem.Items}</div>
-              </div>
+              </div> */}
             </div>
           ))}
-        </div> */}
-        <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
-          Will Update Soon
         </div>
+        {/* <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
+          Will Update Soon
+        </div> */}
       </div>
     </div>
   );

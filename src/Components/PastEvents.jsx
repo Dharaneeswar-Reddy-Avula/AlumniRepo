@@ -6,7 +6,7 @@ const PastEvents = () => {
   return (
     <div className='my-6 mx-4 flex flex-col gap-4 mt-10'>
         <div className="text-3xl font-bold pt-2 text-blue-950">Past Events</div>
-         <div className="w-full bg-gray-300 flex items-center px-[20px] opacity-20 h-[50px]">Will Update Soon ..</div>
+         {/* <div className="w-full bg-gray-300 flex items-center px-[20px] opacity-20 h-[50px]">Will Update Soon ..</div> */}
                 <div className="flex flex-col gap-6 md:flex-row justify-between">
                     {/* <div className="flex w-full md:w-[30%] flex-col">
                         <div><img src={Thirdeve} /></div>
