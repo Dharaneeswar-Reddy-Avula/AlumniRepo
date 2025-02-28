@@ -7,31 +7,186 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./ProudGrad.css";
 import grad from "../../assets/Man1.jpg"
+import cramana from "../../assets/Top20/Ramana.jpg"
+import siva from "../../assets/Top20/siva.jpg"
 
 // Placeholder image from Unsplash
 const placeholderImage =  grad;
 
-// Generate Alumni Data (20 per year)
-const generateAlumniData = () => {
+const rawAlumniData = [
+  {
+    "name": "Chintakayala Ramanna",
+    "branch": "CHEM",
+    "current_position": "Assistant Director, Film Industry",
+    "year_of_graduation": 2008,
+    "image": cramana
+  },
+  {
+    "name": "Siva V",
+    "branch": "CIVIL",
+    "current_position": "Deputy General Manager, Highways & Transport",
+    "year_of_graduation": 2008,
+    "image": siva
+  },
+  {
+    "name": "Dr. Mukkanti Veera Bramha",
+    "branch": "CIVIL",
+    "current_position": "Head of Faculty, NIT AP",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Narasimha Rao Yenugula",
+    "branch": "CIVIL",
+    "current_position": "Senior Design Specialist, Cyient",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "B. Manoj",
+    "branch": "CSE",
+    "current_position": "Senior Data Scientist, Ixigo",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Sai Madhu Polamuri",
+    "branch": "CSE",
+    "current_position": "Lead Data Scientist, Wells Fargo",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Narasimha Rao Manuka",
+    "branch": "CSE",
+    "current_position": "Lead Engineer, KiddeFenwal",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Ch. Srikanth",
+    "branch": "CHEM",
+    "current_position": "Deputy Manager, ITC",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "M. Suresh Babu",
+    "branch": "CHEM",
+    "current_position": "Assistant Manager, Pidilite Industry",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Vijay Krishna Malluri",
+    "branch": "CHEM",
+    "current_position": "Assistant Manager, HPCL",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Aurifur Rehman Mohammed",
+    "branch": "MECH",
+    "current_position": "Azure Data Engineer",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "P. Subbalakshmi",
+    "branch": "CHEM",
+    "current_position": "Program Manager, Amazon",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Kokkirapati VV Satyanarayana",
+    "branch": "CHEM",
+    "current_position": "Post Doctoral Researcher (In South Korea)",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Raghu Tilli",
+    "branch": "ECE",
+    "current_position": "ISRO, URSC Scientist",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Darala Suman",
+    "branch": "MECH",
+    "current_position": "Scientific Officer 'E', NPCL",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Annam Venkatesh Babu",
+    "branch": "MECH",
+    "current_position": "Reserve Bank of India (RBI) Assistant, Bangalore",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Sateesh Kumar Injaratu",
+    "branch": "ECE",
+    "current_position": "Qualcomm Senior Manager, Bangalore",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "B. Suresh",
+    "branch": "MME",
+    "current_position": "Assistant Professor (MNIT Jaipur)",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Linga Murthy",
+    "branch": "MECH",
+    "current_position": "GKN Aerospace Engine Private Limited - Research Engineer",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  },
+  {
+    "name": "Kasula Divya Teja",
+    "branch": "ECE",
+    "current_position": "Manager at Deloitte, Hyderabad",
+    "year_of_graduation": 2008,
+    "image": "image_url"
+  }
+];
+
+// Format the data to match the expected structure
+export const generateAlumniData = () => {
   const years = Array.from({ length: 17 }, (_, i) => 2008 + i);
   const alumniData = {};
 
+  // Initialize empty arrays for all years
   years.forEach((year) => {
-    alumniData[year] = Array.from({ length: 20 }, (_, i) => ({
-      id: `${year}-${i}`,
-      name: `Graduate ${i + 1}`,
-      year: year,
-      image: placeholderImage,
-      degree: ["Computer Science", "Business Administration", "Engineering", "Medicine", "Arts"][Math.floor(Math.random() * 5)],
-      achievement: ["Summa Cum Laude", "Research Excellence", "Leadership Award", "Community Service", "Innovation Prize"][Math.floor(Math.random() * 5)],
-      currentRole: ["Software Engineer", "Project Manager", "Entrepreneur", "Researcher", "Designer"][Math.floor(Math.random() * 5)]
-    }));
+    alumniData[year] = [];
   });
+
+  // Add the actual alumni data to the 2008 year
+  rawAlumniData.forEach((alumni, index) => {
+    alumniData[2008].push({
+      id: `2008-${index}`,
+      name: alumni.name,
+      branch: alumni.branch,
+      currentPosition: alumni.current_position,
+      year: 2008,
+      image: alumni.image || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    });
+  });
+
+  // For years after 2008, create empty arrays (no placeholder data)
+  for (let year = 2009; year <= 2024; year++) {
+    alumniData[year] = [];
+  }
 
   return alumniData;
 };
 
-const alumniData = generateAlumniData();
+export const alumniData = generateAlumniData();
 
 const GraduateCard = ({ graduate }) => {
   return (
