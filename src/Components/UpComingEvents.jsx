@@ -11,9 +11,19 @@ const UpComingEvents = () => {
         UpComing Events
       </div>
       <div className="pt-2">
-        RGUKT Alumini events are great to stay connected to the university and
-        your fellow graduates.Find an near you or one that matches your
-        interests.
+        <h2 className="text-2xl font-bold text-center">Event name: ETERNOX - Never Ending Bond 🎉 </h2> 
+        <br/>
+        Hello Alumni, We are excited to invite
+        you to the 10-Year Alumni Reunion at RGUKT-Nuzvid on March 22-23, 2025!
+        Get ready for a nostalgic journey back to your alma mater, where
+        lifelong memories were made. This two-day celebration will feature
+        cultural programs, interactive sessions, and the grand launch of our
+        Alumni Cell - a dedicated platform to strengthen connections between
+        alumni and the institution for a brighter future. Let's come together to
+        celebrate a decade of memories, reconnect with friends, and relive the
+        golden days. Don't miss this historic event!
+        <br /> 
+        <h4 className="text-1xl font-bold">📢 Register now and make it memorable!</h4>
       </div>
       <div className="flex flex-row gap-[10px] text-sm flex-wrap pt-[6px] font-semibold">
         <div>
@@ -42,12 +52,12 @@ const UpComingEvents = () => {
         </div>
       </div>
       <div className="w-full bg-gray-300 flex items-center px-[20px] opacity-20 h-[80px]">
-        Stay updated with the latest happenings at Rajiv Gandhi University of Knowledge Technologies! Our
-        Event Calendar keeps you informed about upcoming seminars, workshops,
-        cultural fests, alumni meetups, and more. Whether you're looking to
-        learn, network, or celebrate, this is your go-to space for all events.
-        Check the calendar regularly to never miss an exciting opportunity to
-        engage and grow
+        Stay updated with the latest happenings at Rajiv Gandhi University of
+        Knowledge Technologies! Our Event Calendar keeps you informed about
+        upcoming seminars, workshops, cultural fests, alumni meetups, and more.
+        Whether you're looking to learn, network, or celebrate, this is your
+        go-to space for all events. Check the calendar regularly to never miss
+        an exciting opportunity to engage and grow
       </div>
 
       {/* <div className="pt-[10px] flex flex-col md:flex-row">

@@ -25,7 +25,6 @@ const Home = () => {
       <Announcement />
       <DistinguishedAlumni />
     </div>
-
       <Testimonals />
       <HomeAbout />
       <Network />

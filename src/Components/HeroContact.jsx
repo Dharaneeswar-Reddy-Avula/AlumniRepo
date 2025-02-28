@@ -17,16 +17,17 @@ const HeroContact = () => {
         <div className="relative z-10 px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
-              Contact Us
+            Contact Us 📞📧
             </h1>
-            <p className="max-w-xl mx-auto text-xl text-blue-100 sm:text-2xl">We would love to hear from you</p>
+            <p className="max-w-xl mx-auto text-xl text-blue-100 sm:text-2xl">We'd love to hear from you! Whether you have questions, suggestions, or want to stay connected with your alumni network, we're here to help.
+            </p>
             <div className="mt-10 flex justify-center">
               <a
                 href="#contact-form"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 transition duration-150 ease-in-out"
               >
                 <FaEnvelope className="mr-2" />
-                <Link to='/getintouch'>Get in Touch </Link>
+                <Link to='/getintouch'>Get in Touch</Link>
               </a>
             </div>
           </div>

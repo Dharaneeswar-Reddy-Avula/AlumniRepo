@@ -11,7 +11,10 @@ const HomeAbout = () => {
         </div>
         <div className='flex flex-col gap-4 w-[85%] md:w-full  lg:w-[60%]'>
             <div className='text-4xl font-bold text-blue-950'>About Us</div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima alias neque praesentium numquam, voluptates maxime nisi qui molestias sequi harum magni odit cumque rerum quae corrupti laudantium nesciunt quis.</div>
+            <div>
+              <b>  Welcome to the RGUKT Nuzvid Alumni Association </b>
+              a dynamic group of alumni and current students with a common spirit of excellence, learning, and innovation. As one family, we share and promote our university's tradition of excellence and empower the coming generations of innovators and scholars.
+            </div>
             <div className='font-bold'>10,540+ Contributors</div>
             <div>
                 <Link to='/alumni_association'><button className='p-2 px-4 flex flex-row gap-2 items-center text-lg bg-blue-950 text-white font-bold rounded-xl'>Know More
