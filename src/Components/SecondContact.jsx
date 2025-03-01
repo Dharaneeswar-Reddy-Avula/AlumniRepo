@@ -10,9 +10,16 @@ const SecondContact = () => {
           <div className="bg-white rounded-lg shadow-md p-6 space-y-6">
             <h2 className="text-2xl font-bold text-gray-900">Get in Touch</h2>
             <p className="text-gray-600">
-              We'd love to hear from you! Reach out with any questions,
-              feedback, or collaboration ideas.
+              💬 Have a query? Drop us a message, and we'll get back to you as
+              soon as possible. Let's keep the alumni spirit alive!
             </p>
+
+            <p className="text-gray-600">
+              Instead of Follow us on social media use : <br />🌍 Stay Connected
+              Follow us on social media to stay updated with alumni news,
+              reunions, and events!
+            </p>
+
             <hr className="border-gray-200" />
             <ContactInfo
               icon={<IoLocation className="h-6 w-6 text-blue-500" />}

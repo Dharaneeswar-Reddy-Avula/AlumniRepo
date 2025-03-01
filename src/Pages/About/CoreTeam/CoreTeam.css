@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+  
+  .team-section {
+    text-align: center;
+    margin-top: 68PX;
+    width: 100%;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    gap: 80px;
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .CoreName
+  {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+  }
+  .CoreTitle
+  {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: white;
+  }
+  .branch
+  {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .team-card {
+    background: white;      /*#172554 */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background: white; /* Slightly lighter shade for effect */
+}
+
+.details
+{
+  background-color: #172554 ;
+  width:100%;
+  border-radius: 20px;
+}
+  
+
+.social-icons a 
+{
+  border: 2px solid white;
+  margin: 20px 0;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    backdrop-filter: solid white blur(100%);
+    background: transparent;
+}
+  .team-image {
+    width: 60%;
+    border-radius: 30%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    
+  .team-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.1);}
+  
+ 
+  .social-icons i {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+  #icon-1
+  {
+    color: white;
+  }
+
+
+#icon-1:hover {
+    transform: scale(1.3);
+    color: rgb(141, 161, 255);
+    /*LinkedIncolor*/
+}
+

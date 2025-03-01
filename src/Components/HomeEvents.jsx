@@ -10,7 +10,10 @@ const HomeEvents = () => {
         
         <div className='flex mt-4 flex-col gap-4 w-[85%] md:w-full  lg:w-[50%]'>
             <div className='text-4xl md:text-6xl font-bold text-blue-950'>Events</div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima alias neque praesentium numquam, voluptates maxime nisi qui molestias sequi harum magni odit cumque rerum quae corrupti laudantium nesciunt quis.</div>
+            <div>🎉 Alumni Events - Stay Connected, Stay Inspired!
+            Our alumni events are more than just reunions - they're opportunities to reconnect, celebrate, and grow together! Whether it,s a homecoming reunion, networking meetups, career workshops, or milestone celebrations, we ensure every event strengthens the bond between alumni and RGUKT-Nuzvid.
+
+            </div>
             
             <div>
                 <Link to='/event_calender'><button className='p-2 px-4 flex flex-row gap-2 items-center text-lg bg-blue-950 text-white font-bold rounded-xl'>Explore<FaArrowCircleRight className='text-white' /></button></Link>

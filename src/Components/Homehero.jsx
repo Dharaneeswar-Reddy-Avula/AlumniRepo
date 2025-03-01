@@ -13,7 +13,7 @@ const Homehero = () => {
         OUR PROUD ALUMNI
 
       </div>
-      <div  className="absolute mt-[-230px] lg:mt-[-260px] md:mt-[-300px] text-white w-[200px] md:w-[300px] ml-[20px] md:ml-[100px]">"Once an alumnus, always a part of the legacy."</div>
+      <div  className="absolute mt-[-230px] lg:mt-[-260px] md:mt-[-300px] text-white w-[200px] md:w-[300px] ml-[20px] md:ml-[100px]"><b>"Connecting Past, Inspiring Future - The RGUKT-Nuzvid Alumni Network" 🚀🎓</b></div>
       <div className="flex flex-row absolute mt-[-110px] md:mt-[-130px] lg:mt-[-100px] md:ml-[300px] lg:ml-[700px] gap-[20px] ml-[130px]">
         <div><FaInstagram className="w-[30px] h-[30px] text-white"/></div>
         <div><FaSquareFacebook className="w-[30px] h-[30px] text-white"/></div>

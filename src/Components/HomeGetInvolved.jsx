@@ -13,7 +13,10 @@ const HomeGetInvolved = () => {
         </div>
         <div className='flex flex-col gap-4 w-[85%] md:w-[200%]  lg:w-[60%]'>
             <div className='text-4xl font-bold text-blue-950'>Get Involved</div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima alias neque praesentium numquam, voluptates maxime nisi qui molestias sequi harum magni odit cumque rerum quae corrupti laudantium nesciunt quis.</div>
+            <div>Being an RGUKT Nuzvid Alumni Association member is being connected to the university and helping it grow. This platform offers a chance to interact with other alumni, assist students, and work together on projects that build our community.
+            Stay connected, stay inspired, and keep making a difference as members of the RGUKT Nuzvid tradition.
+
+            </div>
             <div className='font-bold'>10,540+ Contributors</div>
             <div>
                 <Link to='/donate'><button className='p-2 px-4 flex flex-row gap-2 items-center text-lg bg-blue-950 text-white font-bold rounded-xl'>Get Involve{/*<FaArrowCircleRight className='text-white' />*/}

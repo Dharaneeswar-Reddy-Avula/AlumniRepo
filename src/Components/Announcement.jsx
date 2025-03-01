@@ -7,24 +7,21 @@ const Announcement = () => {
       sendor: "Office of Alumni Affairs - RGUKT NUZVID",
       position: "PROJECT ASSISTANT",
       address: "at Rajiv Gandhi University of Knowledge Technologies",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic non aliquid ducimus tenetur suscipit, delectus voluptates sit, saepe ipsum laboriosam illum deleniti eaque aspernatur quos nam minus veritatis. ",
+      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now.",
     },
     {
       profile: img,
       sendor: "Office of Alumni Affairs - RGUKT NUZVID",
       position: "PROJECT ASSISTANT",
       address: "at Rajiv Gandhi University of Knowledge Technologies",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic non aliquid ducimus tenetur suscipit, delectus voluptates sit, saepe ipsum laboriosam illum deleniti eaque aspernatur quos nam minus veritatis. ",
+      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now.",
     },
     {
         profile: img,
         sendor: "Office of Alumni Affairs - RGUKT NUZVID",
         position: "PROJECT ASSISTANT",
         address: "at Rajiv Gandhi University of Knowledge Technologies",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic non aliquid ducimus tenetur suscipit, delectus voluptates sit, saepe ipsum laboriosam illum deleniti eaque aspernatur quos nam minus veritatis. ",
+      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now."
       },
   ];
   return (
