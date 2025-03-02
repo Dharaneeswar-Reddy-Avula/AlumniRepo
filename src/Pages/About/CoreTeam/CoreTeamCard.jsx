@@ -25,6 +25,7 @@
 
 // export default TeamCard;
 //TeamCard.js
+
 import React from "react";
 import "./CoreTeam";
 

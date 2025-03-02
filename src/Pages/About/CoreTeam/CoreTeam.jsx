@@ -62,6 +62,7 @@
 // };
 
 // export default CoreTeam;
+
 import React from "react";
 import TeamCard from "./CoreTeamCard";
 import "./CoreTeam.css";
