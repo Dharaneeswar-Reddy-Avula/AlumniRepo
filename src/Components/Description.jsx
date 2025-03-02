@@ -48,7 +48,10 @@ const Description = () => {
             <li><b>Workshops and Seminars: </b>Organize events relating to skill-building, current trends in industries, and self-improvement.</li>
 
             <li><b>Community Service: </b>Participate in activities that help the community at large, keeping alive the values acquired during our days at RGUKT Nuzvid.</li>
-
+          </ul>
+        
+          </section>
+          </div>
       <div className="text-lg text-gray-700 leading-relaxed space-y-8">
         <section className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
           <h3 className="text-3xl font-semibold text-gray-800 mb-3">
