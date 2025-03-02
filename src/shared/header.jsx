@@ -269,7 +269,7 @@ const Header = () => {
                           {" "}
                           <div className="flex flex-row gap-2 items-center p-1">
                             <BsPersonHeart className="font-bold" />
-                            Student Volunteers
+                            Department Coordinators
                           </div>{" "}
                         </Link>
                         <Link
@@ -690,8 +690,8 @@ const Header = () => {
                 {" "}
                 <div className="flex flex-row gap-2 items-center p-1">
                   <BsPersonHeart className="font-bold" />
-                  Student Volunteers
-                </div>{" "}
+                  Department Coordinators
+                  </div>{" "}
               </Link>
               <Link
                 to="/web_team"

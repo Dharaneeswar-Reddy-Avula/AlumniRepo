@@ -10,7 +10,7 @@ import Contact from "./Pages/Contact/Contact";
 import Login from "./Components/Login";
 import Alumni_Directory from "./Pages/Alumni/Alumni_Directory/Alumni_Directory";
 import Error from "./Pages/Error/Error404";
-import Register from "./Components/Register";
+// import Register from "./Components/Register";
 import Notifications from "./Components/Notifications";
 import AlumniAssociation from "./Pages/About/AlumniAssociation/AlumniAssociation";
 import Chapter from "./Pages/Events/Chapter/Chapter";
