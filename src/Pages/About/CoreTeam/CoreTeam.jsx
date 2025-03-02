@@ -63,9 +63,6 @@
 
 // export default CoreTeam;
 
-
-
-// CoreTeam.jsx
 import React from "react";
 import TeamCard from "./CoreTeamCard";
 import "./CoreTeam.css";

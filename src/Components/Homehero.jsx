@@ -20,18 +20,18 @@ const Homehero = () => {
       </div>
       <div className="flex flex-row   gap-[4px] md:gap-[50px] lg:gap-[150px] bg-white mt-[-50px] absolute p-[20px] rounded-md md:ml-[130px] lg:ml-[410px] lg:ml-[500px] flex-wrap m-[10px] justify-center items-center">
        <div className="flex flex-col  border-blue-950 h-[50px] border-r-4 ml-[15px] md:ml-[30px]">
-        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:mr-[70px]">1000+</div>
+        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:mr-[70px]">6000+</div>
         <div className="ml-[10px] font-bold mr-[40px] lg:mr-[70px]">Students</div>
 
        </div>
        <div className="flex flex-col md:border-blue-950 h-[50px] md:border-r-4 ml-[10px] md:ml-[0px]">
-        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:ml-[-60px]">1000+</div>
+        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:ml-[-60px]">68000+</div>
         <div className="ml-[10px] font-bold md:mr-[40px] lg:ml-[-60px]">Alumni</div>
         
 
        </div>
        <div className="flex flex-col mt-[20px] md:mt-[0px] lg:mr-[20px]">
-        <div className="font-bold text-blue-950 text-4xl lg:ml-[-50px]">300+</div>
+        <div className="font-bold text-blue-950 text-4xl lg:ml-[-50px]">10,000+</div>
         <div className=" font-bold lg:ml-[-50px]">Placements</div>
 
        </div>

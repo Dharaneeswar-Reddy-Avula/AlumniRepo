@@ -2,8 +2,8 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineOndemandVideo } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
-import firsteve from "../assets/firsteve.png";
-import Secondeve from "../assets/Secondeve.png";
+// import firsteve from "../assets/firsteve.png";
+// import Secondeve from "../assets/Secondeve.png";
 const UpComingEvents = () => {
   return (
     <div className="my-6 mx-4 flex flex-col gap-4">
@@ -51,18 +51,18 @@ const UpComingEvents = () => {
           </button>
         </div>
       </div>
-      <div className="w-full bg-gray-300 flex items-center px-[20px] opacity-20 h-[80px]">
+      {/* <div className="w-full bg-gray-300 flex items-center px-[20px] opacity-20 h-[80px]">
         Stay updated with the latest happenings at Rajiv Gandhi University of
         Knowledge Technologies! Our Event Calendar keeps you informed about
         upcoming seminars, workshops, cultural fests, alumni meetups, and more.
         Whether you're looking to learn, network, or celebrate, this is your
         go-to space for all events. Check the calendar regularly to never miss
         an exciting opportunity to engage and grow
-      </div>
+      </div> */}
 
-      {/* <div className="pt-[10px] flex flex-col md:flex-row">
+      <div className="pt-[10px] flex flex-col md:flex-row">
         <div className="flex w-full md:w-[25%]">
-          <img src={firsteve} />
+          {/* <img src={firsteve} /> */}
         </div>
         <div className="flex flex-col justify-center my-2 md:mx-4 gap-2 w-full md:w-[70%]">
           <div className="flex justify-end ">
@@ -81,7 +81,7 @@ const UpComingEvents = () => {
             game, the 5k run and more
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <div className="pt-[10px] flex flex-col md:flex-row">
         <div className="flex w-full md:w-[25%]">
           <img src={Secondeve} />

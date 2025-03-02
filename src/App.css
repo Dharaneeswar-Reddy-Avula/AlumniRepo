@@ -39,3 +39,13 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+.past-event {
+  background-color: #f0a1a1; /* Light red for past events */
+}
+
+.upcoming-event {
+  background-color: #a1f0a1; /* Light green for upcoming events */
+}
+

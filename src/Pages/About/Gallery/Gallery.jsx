@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate,Link } from 'react-router-dom';
 import { IoShareSocialSharp } from "react-icons/io5";
-import Fest from '../../../assets/Fest.jpeg';
-import Meet from '../../../assets/Meet.jpg';
-import Secondmeet from '../../../assets/Secondmeet.jpg';
-import Thirdmeet from '../../../assets/Thirdmeet.jpg';
-
+// import Fest from '../../../assets/Fest.jpeg';
+// import Meet from '../../../assets/Meet.jpg';
+// import Secondmeet from '../../../assets/Secondmeet.jpg';
+// import Thirdmeet from '../../../assets/Thirdmeet.jpg';
+import comingsoon from "../../../assets/coming soon.jpg"
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -21,10 +21,15 @@ const Gallery = () => {
   };
 
   const pho = [
-    { id: 1, image: Fest, Event: "Alumni life in Delhi", Items: "5 items" },
-    { id: 2, image: Meet, Event: "Alumni life in Delhi", Items: "5 items" },
-    { id: 3, image: Secondmeet, Event: "Alumni life in Delhi", Items: "5 items" },
-    { id: 4, image: Thirdmeet, Event: "Alumni life in Delhi", Items: "5 items" }
+    // { id: 1, image: Fest, Event: "Alumni life in Delhi", Items: "5 items" },
+    // { id: 2, image: Meet, Event: "Alumni life in Delhi", Items: "5 items" },
+    // { id: 3, image: Secondmeet, Event: "Alumni life in Delhi", Items: "5 items" },
+    // { id: 4, image: Thirdmeet, Event: "Alumni life in Delhi", Items: "5 items" }
+    { id: 1, image: comingsoon},
+    { id: 2, image: comingsoon},
+    { id: 3, image: comingsoon},
+    { id: 4, image: comingsoon},
+   
   ];
 
   return (
@@ -71,7 +76,7 @@ const Gallery = () => {
           )}
         </div>
         <div className="flex flex-wrap gap-[20px]">
-          {/* {pho.map((mem) => (
+          {pho.map((mem) => (
             <div
               key={mem.id}
               className="relative group w-[300px] md:w-[180px] lg:w-[450px] h-[300px] md:h-[200px] lg:h-[300px] mt-[20px] md:mt-[0px] mb-[20px]"
@@ -90,9 +95,9 @@ const Gallery = () => {
                 <div>{mem.Items}</div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
-        <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px]'>Will Update Soon</div>
+        {/* <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px]'>Will Update Soon</div> */}
 
 
       </div>
