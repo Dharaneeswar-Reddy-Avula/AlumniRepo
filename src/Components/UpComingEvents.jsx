@@ -62,7 +62,7 @@ const UpComingEvents = () => {
 
       <div className="pt-[10px] flex flex-col md:flex-row">
         <div className="flex w-full md:w-[25%]">
-          <img src={firsteve} />
+          {/* <img src={firsteve} /> */}
         </div>
         <div className="flex flex-col justify-center my-2 md:mx-4 gap-2 w-full md:w-[70%]">
           <div className="flex justify-end ">
