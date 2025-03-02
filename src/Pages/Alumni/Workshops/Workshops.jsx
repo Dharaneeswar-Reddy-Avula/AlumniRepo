@@ -7,7 +7,7 @@ import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaUserTie } from "react-icons/f
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-
+import comingsoon from "../../../assets/coming soon.jpg"
 const Workshops = () => {
   const [searchTerm, setSearchTerm] = useState("")
   const [showFilters, setShowFilters] = useState(false)
@@ -145,9 +145,9 @@ const Workshops = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">Upcoming Workshops</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* {upcomingWorkshops.map((workshop) => (
+            {upcomingWorkshops.map((workshop) => (
               <div key={workshop.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="p-6">
+                {/* <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{workshop.title}</h3>
                   <p className="text-gray-600 mb-4">{workshop.branch}</p>
                   <div className="flex items-center text-gray-700 mb-2">
@@ -166,16 +166,16 @@ const Workshops = () => {
                     <FaMapMarkerAlt className="mr-2" />
                     <span>{workshop.location}</span>
                   </div>
-                </div>
+                </div> */}
+               <img src={comingsoon} />
                 <div className="bg-gray-50 px-6 py-4">
                   <button className="w-full bg-blue-950 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
                     Register Now
                   </button>
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
-          <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px]">Will Update Soon...</div>
 
         </section>
 
@@ -183,9 +183,9 @@ const Workshops = () => {
         <section>
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">Completed Workshops</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* {completedWorkshops.map((workshop) => (
+            {completedWorkshops.map((workshop) => (
               <div key={workshop.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="p-6">
+                {/* <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{workshop.title}</h3>
                   <p className="text-gray-600 mb-4">{workshop.branch}</p>
                   <div className="flex items-center text-gray-700 mb-2">
@@ -200,16 +200,16 @@ const Workshops = () => {
                     <FaUserTie className="mr-2" />
                     <span>{workshop.participants} Participants</span>
                   </div>
-                </div>
+                </div> */}
+                <img src={comingsoon} />
                 <div className="bg-gray-50 px-6 py-4">
                   <button className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition-colors">
                     View Resources
                   </button>
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
-          <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] ">Will Update Soon...</div>
 
         </section>
       </div>

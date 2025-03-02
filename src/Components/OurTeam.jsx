@@ -21,7 +21,7 @@ const OurTeam = () => {
               {data.map((item, index) => (
                 <div className="relative">
                   <img
-                    src={aboutteam}
+                    src={""}
                     className="h-[350px] w-[300px] rounded-[5px]"
                   />
                   <div className="absolute bottom-2 left-2 right-2 rounded-lg bg-[#F2F2F2] h-[90px] flex flex-col justify-center gap-[5px] items-center text-[black]">

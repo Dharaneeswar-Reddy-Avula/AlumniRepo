@@ -6,7 +6,6 @@ import { FaTwitter } from "react-icons/fa";
 const Cards = () => {
   const teamMembers = [
     { id: 1, image: aboutteam2,name:"Name",profession:"Profession" },
-    { id:2, image:aboutteam2,name:"Name",profession:"Profession"}
     
   ];
   return (

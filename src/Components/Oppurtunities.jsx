@@ -1,8 +1,15 @@
-import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Search, Briefcase, MapPin, Clock, DollarSign, Filter } from "lucide-react"
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Search,
+  Briefcase,
+  MapPin,
+  Clock,
+  DollarSign,
+  Filter,
+} from "lucide-react";
 
-const Logo = "https://via.placeholder.com/50" // Placeholder for logo
+const Logo = "https://via.placeholder.com/50"; // Placeholder for logo
 
 const JobCard = ({ job, applyToJob }) => (
   <motion.div
@@ -14,9 +21,9 @@ const JobCard = ({ job, applyToJob }) => (
   >
     <div className="flex items-start gap-4">
       <div className="shrink-0">
-        <img src={Logo || "/placeholder.svg"} alt={job.company} className="w-12 h-12 rounded-full shadow-md" />
+        {/* <img src={Logo || "/placeholder.svg"} alt={job.company} className="w-12 h-12 rounded-full shadow-md" /> */}
       </div>
-      <div className="flex-grow">
+      {/* <div className="flex-grow">
         <h3 className="text-xl font-bold text-gray-900">{job.company}</h3>
         <p className="text-sm text-gray-600 flex items-center">
           <MapPin size={14} className="mr-1" /> {job.location}
@@ -33,18 +40,20 @@ const JobCard = ({ job, applyToJob }) => (
           <Clock size={14} className="mr-1" /> {job.duration}
         </span>
       </div>
-      <p className="text-gray-700 text-sm">{job.description}</p>
-      <div className="flex flex-wrap gap-2">
+      <p className="text-gray-700 text-sm">{job.description}</p> */}
+      {/* <div className="flex flex-wrap gap-2">
         {job.skills.map((skill, index) => (
           <span key={index} className="bg-blue-100 text-blue-950 text-xs font-medium px-2.5 py-0.5 rounded">
             {skill}
           </span>
         ))}
-      </div>
-      <div className="flex items-center justify-between pt-2">
-        <span className="text-lg font-bold text-green-600 flex items-center">
+      </div> */}
+      <div className="flex flex-col items-start justify-between pt-2">
+        {/* <span className="text-lg font-bold text-green-600 flex items-center">
           <DollarSign size={18} className="mr-1" /> {job.salary}/month
-        </span>
+        </span> */}
+        <div className="text-center text-gray-500 py-8">Will Update Soon</div>
+
         <button
           onClick={() => applyToJob(job.id)}
           className="bg-blue-950 hover:bg-blue-950 text-white font-bold py-2 px-4 rounded transition duration-300"
@@ -54,13 +63,13 @@ const JobCard = ({ job, applyToJob }) => (
       </div>
     </div>
   </motion.div>
-)
+);
 
 const Oppurtunities = () => {
-  const [opportunities, setOpportunities] = useState([])
-  const [filteredOpportunities, setFilteredOpportunities] = useState([])
-  const [searchTerm, setSearchTerm] = useState("")
-  const [filterType, setFilterType] = useState("All")
+  const [opportunities, setOpportunities] = useState([]);
+  const [filteredOpportunities, setFilteredOpportunities] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filterType, setFilterType] = useState("All");
 
   useEffect(() => {
     // Simulating API call to fetch opportunities
@@ -74,7 +83,8 @@ const Oppurtunities = () => {
           location: "San Francisco, CA",
           type: "Full Time",
           duration: "Permanent",
-          description: "We're seeking a talented Frontend Developer to join our innovative team...",
+          description:
+            "We're seeking a talented Frontend Developer to join our innovative team...",
           skills: ["React", "TypeScript", "Tailwind CSS"],
           salary: "8,000",
         },
@@ -85,7 +95,8 @@ const Oppurtunities = () => {
           location: "New York, NY",
           type: "Contract",
           duration: "6 months",
-          description: "Join our data science team to work on cutting-edge machine learning projects...",
+          description:
+            "Join our data science team to work on cutting-edge machine learning projects...",
           skills: ["Python", "TensorFlow", "SQL"],
           salary: "12,000",
         },
@@ -96,7 +107,8 @@ const Oppurtunities = () => {
           location: "Remote",
           type: "Full Time",
           duration: "Permanent",
-          description: "Help us scale our cloud infrastructure and implement CI/CD pipelines...",
+          description:
+            "Help us scale our cloud infrastructure and implement CI/CD pipelines...",
           skills: ["AWS", "Docker", "Kubernetes"],
           salary: "10,000",
         },
@@ -107,7 +119,8 @@ const Oppurtunities = () => {
           location: "Boston, MA",
           type: "Part Time",
           duration: "1 year",
-          description: "Contribute to our mission of promoting sustainable energy solutions...",
+          description:
+            "Contribute to our mission of promoting sustainable energy solutions...",
           skills: ["Data Analysis", "Environmental Science", "Report Writing"],
           salary: "6,000",
         },
@@ -118,7 +131,8 @@ const Oppurtunities = () => {
           location: "Chicago, IL",
           type: "Full Time",
           duration: "Permanent",
-          description: "Develop innovative mobile health applications to improve patient care...",
+          description:
+            "Develop innovative mobile health applications to improve patient care...",
           skills: ["React Native", "iOS", "Android"],
           salary: "9,000",
         },
@@ -129,32 +143,33 @@ const Oppurtunities = () => {
           location: "Miami, FL",
           type: "Contract",
           duration: "1 year",
-          description: "Join our blockchain team to develop decentralized finance solutions...",
+          description:
+            "Join our blockchain team to develop decentralized finance solutions...",
           skills: ["Solidity", "Ethereum", "Smart Contracts"],
           salary: "11,000",
         },
-      ]
-      setOpportunities(mockOpportunities)
-      setFilteredOpportunities(mockOpportunities)
-    }
+      ];
+      setOpportunities(mockOpportunities);
+      setFilteredOpportunities(mockOpportunities);
+    };
 
-    fetchOpportunities()
-  }, [])
+    fetchOpportunities();
+  }, []);
 
   useEffect(() => {
     const results = opportunities.filter(
       (job) =>
         (job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
           job.position.toLowerCase().includes(searchTerm.toLowerCase())) &&
-        (filterType === "All" || job.type === filterType),
-    )
-    setFilteredOpportunities(results)
-  }, [searchTerm, filterType, opportunities])
+        (filterType === "All" || job.type === filterType)
+    );
+    setFilteredOpportunities(results);
+  }, [searchTerm, filterType, opportunities]);
 
   const applyToJob = (jobId) => {
     // In a real application, you would handle the job application process here
-    alert(`Applied to job with ID: ${jobId}`)
-  }
+    alert(`Applied to job with ID: ${jobId}`);
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 py-12 mt-14 px-4 sm:px-6 lg:px-8">
@@ -191,11 +206,11 @@ const Oppurtunities = () => {
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <Filter className="h-5 w-5" />
-            </div>  
+            </div>
           </div>
         </div>
-        <span className="text-center text-2xl">"No opportunities available yet."</span>
-        {/* <motion.div layout className="flex flex-wrap gap-6 justify-center">
+        {/* <span className="text-center text-2xl">"No opportunities available yet."</span> */}
+        <motion.div layout className="flex flex-wrap gap-6 justify-center">
           <AnimatePresence>
             {filteredOpportunities.map((job) => (
               <JobCard key={job.id} job={job} applyToJob={applyToJob} />
@@ -204,14 +219,17 @@ const Oppurtunities = () => {
         </motion.div>
 
         {filteredOpportunities.length === 0 && (
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-gray-600 mt-8">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center text-gray-600 mt-8"
+          >
             No opportunities found. Try adjusting your search or filters.
           </motion.p>
-        )} */}
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Oppurtunities
-
+export default Oppurtunities;
