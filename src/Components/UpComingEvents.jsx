@@ -4,6 +4,7 @@ import { MdOutlineOndemandVideo } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 // import firsteve from "../assets/firsteve.png";
 // import Secondeve from "../assets/Secondeve.png";
+import evento from "../assets/upcoming.jpg"
 const UpComingEvents = () => {
   return (
     <div className="my-6 mx-4 flex flex-col gap-4">
@@ -62,7 +63,7 @@ const UpComingEvents = () => {
 
       <div className="pt-[10px] flex flex-col md:flex-row">
         <div className="flex w-full md:w-[25%]">
-          {/* <img src={firsteve} /> */}
+         <img src={evento} /> 
         </div>
         <div className="flex flex-col justify-center my-2 md:mx-4 gap-2 w-full md:w-[70%]">
           <div className="flex justify-end ">

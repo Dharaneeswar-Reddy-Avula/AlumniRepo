@@ -1,14 +1,14 @@
 import { useState } from "react"
 import { Calendar, MapPin, Users } from "lucide-react"
-import comingsoon from "../../../assets/coming soon.jpg"
+import comingsoon from "../../../assets/upcoming.jpg"
 
 const Upcoming = () => {
   const [showAll, setShowAll] = useState(false)
   const events = [
     {
       // title: "Class of 2018 Reunion",
-      // date: "Jan 30, 2025",
-      // location: "Grand Alumni Hall, University Campus",
+      date: "MAR 22, 2025  && MAR 23 2025",
+      location: "RGUKT NUZVID",
       // image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
       image:comingsoon,
       // attendees: 120,
@@ -64,7 +64,7 @@ const Upcoming = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* {(showAll ? events : events.slice(0, 3)).map((event, index) => (
+          {(showAll ? events : events.slice(0, 3)).map((event, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105"
@@ -91,7 +91,7 @@ const Upcoming = () => {
                 </button>
               </div>
             </div>
-          ))} */}
+          ))}
 
         </div>
         <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center'>Will Update Soon</div>

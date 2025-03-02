@@ -10,39 +10,44 @@ import { CiMenuKebab } from "react-icons/ci";
 import Fest from '../../../assets/Fest.jpeg';
 import Fourthfest from '../../../assets/Fourthfest.jpg';
 import Fifthfest from '../../../assets/Fifthfest.jpg';
-
+import comingsoon from "../../../assets/coming soon.jpg"
 const galleryData = [
   {
     id: '1',
-    event: 'Alumni Life in Delhi',
-    date: 'Oct 11, 2024',
-    category: 'Nuzvid',
-    images: [Fest, Fourthfest, Fifthfest],
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales lacus augue, in hendrerit libero tempor vel.',
+    // event: 'Alumni Life in Delhi',
+    // date: 'Oct 11, 2024',
+    // category: 'Nuzvid',
+    // images: [Fest, Fourthfest, Fifthfest],
+    images:[comingsoon]
+    // content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales lacus augue, in hendrerit libero tempor vel.',
   },
   {
     id: '2',
-    event: 'Reunion Fun Times',
-    date: 'Nov 12, 2024',
-    category: 'Hyderabad',
-    images: [Fest, Fourthfest],
-    content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
+    // event: 'Reunion Fun Times',
+    // date: 'Nov 12, 2024',
+    // category: 'Hyderabad',
+    // images: [Fest, Fourthfest],
+    images:[comingsoon]
+    // content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
   },
   {
     id: '3',
-    event: 'Nuzvid',
-    date: 'Nov 12, 2024',
-    category: 'Hyderabad',
-    images: [Fest],
-    content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
+    // event: 'Nuzvid',
+    // date: 'Nov 12, 2024',
+    // category: 'Hyderabad',
+    // images: [Fest],
+    images:[comingsoon]
+    // content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
   },
   {
     id: '4',
-    event: 'Nuzvid',
-    date: 'Nov 12, 2024',
-    category: 'Hyderabad',
-    images: [Fourthfest],
-    content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
+    // event: 'Nuzvid',
+    // date: 'Nov 12, 2024',
+    // category: 'Hyderabad',
+    // images: [Fourthfest],
+    images:[comingsoon]
+
+    // content: 'Phasellus ultricies, libero at fermentum gravida, felis sapien venenatis quam, at fermentum velit velit ac justo.',
   },
  
 ];
@@ -74,9 +79,9 @@ const Twogallery = () => {
           <p><FaArrowLeftLong className="mt-[4px]" /></p>
           <p>Go Back</p>
         </button>
-        <div className="text-xl font-bold">{galleryItem.event}</div>
+        {/* <div className="text-xl font-bold">{galleryItem.event}</div> */}
         <div>
-          <p>{galleryItem.content}</p>
+          {/* <p>{galleryItem.content}</p> */}
         </div>
         <div className="flex flex-wrap gap-[10px]">
           {galleryItem.images.map((image, index) => (
@@ -89,11 +94,11 @@ const Twogallery = () => {
         <hr className="mt-[20px]" />
         <div className="flex flex-row">
           <p><PiCalendarDotsLight className="mt-[5px]" /></p>
-          <p>{galleryItem.date}</p>
+          {/* <p>{galleryItem.date}</p> */}
         </div>
         <div className="flex flex-row gap-[4px] pt-[20px]">
           <p>Category</p>
-          <p><button className="rounded-full bg-blue-100 w-[80px] h-[30px]">{galleryItem.category}</button></p>
+          {/* <p><button className="rounded-full bg-blue-100 w-[80px] h-[30px]">{galleryItem.category}</button></p> */}
         </div>
 
         <div><hr /></div>

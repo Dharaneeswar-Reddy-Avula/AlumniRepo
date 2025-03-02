@@ -14,10 +14,10 @@ import Error from "./Pages/Error/Error404";
 import Notifications from "./Components/Notifications";
 import AlumniAssociation from "./Pages/About/AlumniAssociation/AlumniAssociation";
 import Chapter from "./Pages/Events/Chapter/Chapter";
-import CoreTeam from "./Pages/About/CoreTeam/CoreTeam";
 import Alumni_News from "./Pages/updates/alumni_news/Alumni_News";
 import StudentVolunteers from "./Pages/About/StudentVolunteers/StudentVolunteers";
 import WebTeam from "./Pages/About/WebTeam/WebTeam";
+import CoreTeam from "./Pages/CoreTeam/CoreTeam"
 import Gallery from "./Pages/About/Gallery/Gallery";
 import EventCalender from "./Pages/Events/EventCalender/EventCalender";
 import Reunion from "./Pages/Events/Reunion/Reunion";

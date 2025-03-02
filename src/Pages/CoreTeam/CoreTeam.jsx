@@ -63,12 +63,20 @@
 
 // export default CoreTeam;
 
+
+
+// CoreTeam.jsx
 import React from "react";
 import TeamCard from "./CoreTeamCard";
 import "./CoreTeam.css";
+import Nikhil from "../../assets/CoreTeam/Nikhil.jpg"
 
 const teamMembers = [
-  { name: "Nikhileswara Rao Sulake", title: "PRESIDENT", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-laptop"}, 
+  { name: "Nikhileswara Rao Sulake", title: "PRESIDENT", Branch: "CSE",
+    //  image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",
+    image:Nikhil,
+    linkedin:"https://linkedin.com",
+     logo:"fas fa-laptop"}, 
 
   { name: "Sai Manikanta Eswar Machara", title: "VICE PRESIDENT", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFxWtaWfT3dxw/profile-displayphoto-shrink_800_800/B4EZVMDDOwHMAc-/0/1740737628800?e=1746057600&v=beta&t=MrqLEg_q5cWR2kQRxqubL9scyijMTQf3BH5xww4YvKo",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
