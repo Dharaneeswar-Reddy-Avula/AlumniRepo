@@ -99,11 +99,11 @@ const Awards = () => {
               <p className="text-gray-600">Students Participated</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600">₹10M+</p>
+              <p className="text-4xl font-bold text-blue-600">₹1M+</p>
               <p className="text-gray-600">Prize Money Earned</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600">30+</p>
+              <p className="text-4xl font-bold text-blue-600">10+</p>
               <p className="text-gray-600">Partnering Organizations</p>
             </div>
           </div>

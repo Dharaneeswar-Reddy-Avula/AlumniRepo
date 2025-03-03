@@ -6,6 +6,7 @@ import { SocialShare } from '../Noticeboard/Components/SocialShare';
 import { JobCard } from '../Noticeboard/Components/JobCard';
 import { PollCard } from '../Noticeboard/Components/PollCard';
 import { FundraiserCard } from '../Noticeboard/Components/FundraiserCard';
+import evento from "../../assets/upcoming.jpg"
 import { EventCard } from './Components/Eventcard';
 function Noticeboard() {
   const [addPoll,setAddPoll]=useState(false);
@@ -19,20 +20,21 @@ function Noticeboard() {
   }
   const campaigns = [
     {
-      title: "Entrepreneurs' Journey",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=300&h=300",
-      endsOn: "19 Sep, 2025"
+      id:"1"
+      // title: "Entrepreneurs' Journey",
+      // image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=300&h=300",
+      // endsOn: "19 Sep, 2025"
     },
-    {
-      title: "Alumni of the Month",
-      image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=300&h=300",
-      endsOn: "18 Sep, 2025"
-    },
-    {
-      title: "Your Network, Their Future",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=300&h=300",
-      endsOn: "17 Sep, 2025"
-    }
+    // {
+    //   title: "Alumni of the Month",
+    //   image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=300&h=300",
+    //   endsOn: "18 Sep, 2025"
+    // },
+    // {
+    //   title: "Your Network, Their Future",
+    //   image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=300&h=300",
+    //   endsOn: "17 Sep, 2025"
+    // }
   ];
 
   const networks = [
@@ -43,102 +45,102 @@ function Noticeboard() {
   ];
   const events = [
     {
-      title: "Uttarayan SkyFest 2025",
-      date: "Jan 31, 2025 - 4:25 PM",
-      location: "Dimas (Estación Dimas)",
-      image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&q=80&w=800",
+      title: "ETERNOX 2025",
+      date: "MAR 31, 2025 - 4:25 PM",
+      location: "RGUKT NUZVID",
+      image:evento ,
       isPastEvent: false,
     },
-    {
-      title: "Tech Summit 2025",
-      date: "Feb 10, 2025 - 10:00 AM",
-      location: "Hyderabad Convention Center",
-      image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&q=80&w=800",
-      isPastEvent: false,
-    },
-    {
-      title: "AI Expo 2025",
-      date: "March 15, 2025 - 9:30 AM",
-      location: "Bangalore Tech Park",
-      image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&q=80&w=800",
-      isPastEvent: false,
-    },
+    // {
+    //   title: "Tech Summit 2025",
+    //   date: "Feb 10, 2025 - 10:00 AM",
+    //   location: "Hyderabad Convention Center",
+    //   image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&q=80&w=800",
+    //   isPastEvent: false,
+    // },
+    // {
+    //   title: "AI Expo 2025",
+    //   date: "March 15, 2025 - 9:30 AM",
+    //   location: "Bangalore Tech Park",
+    //   image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&q=80&w=800",
+    //   isPastEvent: false,
+    // },
   ];
-  const polls = [
-    {
-      author: "Muthuraja Balasubramani",
-      date: "Jan 21, 2025",
-      question: "How many will attend?",
-      options: ["Just me", "Me +1", "Me ++"],
-      totalVotes: 0,
-    },
-    {
-      author: "Anjali Kumar",
-      date: "Feb 5, 2025",
-      question: "Which workshop do you prefer?",
-      options: ["AI", "Blockchain", "Cybersecurity"],
-      totalVotes: 50,
-    },
-    {
-      author: "Rahul Sharma",
-      date: "Feb 12, 2025",
-      question: "Best programming language?",
-      options: ["Python", "JavaScript", "Java"],
-      totalVotes: 100,
-    },
-  ];
-  const jobs = [
-    {
-      title: "Sales Officer",
-      company: "ABV Ltd.",
-      location: "Ahmedabad",
-      deadline: "Dec 13, 2024",
-      salary: "₹20,000",
-      applications: "0",
-    },
-    {
-      title: "Software Engineer",
-      company: "Tech Solutions",
-      location: "Bangalore",
-      deadline: "Jan 10, 2025",
-      salary: "₹80,000",
-      applications: "10",
-    },
-    {
-      title: "Marketing Executive",
-      company: "BrandWorks",
-      location: "Mumbai",
-      deadline: "Feb 20, 2025",
-      salary: "₹45,000",
-      applications: "5",
-    },
-  ];
-  const fundraisers = [
-    {
-      title: "Support Student Scholarships",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
-      amountRaised: 151000,
-      goal: 1000000,
-      contributors: 5,
-      isCompleted: false,
-    },
-    {
-      title: "Help Flood Victims",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
-      amountRaised: 250000,
-      goal: 500000,
-      contributors: 50,
-      isCompleted: false,
-    },
-    {
-      title: "Education for Underprivileged Kids",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
-      amountRaised: 800000,
-      goal: 1000000,
-      contributors: 20,
-      isCompleted: false,
-    },
-  ];  
+  // const polls = [
+  //   {
+  //     author: "Muthuraja Balasubramani",
+  //     date: "Jan 21, 2025",
+  //     question: "How many will attend?",
+  //     options: ["Just me", "Me +1", "Me ++"],
+  //     totalVotes: 0,
+  //   },
+  //   {
+  //     author: "Anjali Kumar",
+  //     date: "Feb 5, 2025",
+  //     question: "Which workshop do you prefer?",
+  //     options: ["AI", "Blockchain", "Cybersecurity"],
+  //     totalVotes: 50,
+  //   },
+  //   {
+  //     author: "Rahul Sharma",
+  //     date: "Feb 12, 2025",
+  //     question: "Best programming language?",
+  //     options: ["Python", "JavaScript", "Java"],
+  //     totalVotes: 100,
+  //   },
+  // ];
+  // const jobs = [
+  //   {
+  //     title: "Sales Officer",
+  //     company: "ABV Ltd.",
+  //     location: "Ahmedabad",
+  //     deadline: "Dec 13, 2024",
+  //     salary: "₹20,000",
+  //     applications: "0",
+  //   },
+  //   {
+  //     title: "Software Engineer",
+  //     company: "Tech Solutions",
+  //     location: "Bangalore",
+  //     deadline: "Jan 10, 2025",
+  //     salary: "₹80,000",
+  //     applications: "10",
+  //   },
+  //   {
+  //     title: "Marketing Executive",
+  //     company: "BrandWorks",
+  //     location: "Mumbai",
+  //     deadline: "Feb 20, 2025",
+  //     salary: "₹45,000",
+  //     applications: "5",
+  //   },
+  // ];
+  // const fundraisers = [
+  //   {
+  //     title: "Support Student Scholarships",
+  //     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
+  //     amountRaised: 151000,
+  //     goal: 1000000,
+  //     contributors: 5,
+  //     isCompleted: false,
+  //   },
+  //   {
+  //     title: "Help Flood Victims",
+  //     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
+  //     amountRaised: 250000,
+  //     goal: 500000,
+  //     contributors: 50,
+  //     isCompleted: false,
+  //   },
+  //   {
+  //     title: "Education for Underprivileged Kids",
+  //     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
+  //     amountRaised: 800000,
+  //     goal: 1000000,
+  //     contributors: 20,
+  //     isCompleted: false,
+  //   },
+  // ];  
   return (
     <div className="min-h-screen bg-gray-50 w-full">
       <div className="bg-gray-50 overflow-y-auto h-screen scrollbar-hide no-scrollbar mt-[100px] xl:px-[80px] ">
@@ -208,9 +210,9 @@ function Noticeboard() {
         </section>
         
         {events.map((event, index) => <EventCard key={index} {...event} />)}
-              {jobs.map((job, index) => <JobCard key={index} {...job} />)}
-              {polls.map((poll, index) => <PollCard key={index} {...poll} />)}
-              {fundraisers.map((fundraiser, index) => <FundraiserCard key={index} {...fundraiser} />)}
+              {/* {jobs.map((job, index) => <JobCard key={index} {...job} />)} */}
+              {/* {polls.map((poll, index) => <PollCard key={index} {...poll} />)} */}
+              {/* {fundraisers.map((fundraiser, index) => <FundraiserCard key={index} {...fundraiser} />)} */}
 
             </div>
           </div>

@@ -13,6 +13,11 @@ import venkateshbabu from "../../../assets/Top20/venkateshbabu.jpg";
 import RaghuRamReddy from "../../../assets/Top20/RaghuRamReddy.jpg";
 import Satyanarayana from "../../../assets/Top20/Satyanarayana.jpg";
 import Divya from "../../../assets/Top20/Divya.jpg";
+// import saimadhu from "../../../../assets/Top20/saimadhu.jpg";
+import saimadhu from "../../../assets/Top20/saimadhu.jpg"
+import NarasimhaRao from "../../../assets/Top20/NarasimhaRao.jpg";
+import SrikanthCh from "../../../assets/Top20/SrikanthCh.jpg";
+import vijayKrishna from "../../../assets/Top20/vijayKrishna.jpg"
 const AlumniCard = ({ name, branch, domain, year_of_graduation, image }) => (
   <div className='h-[100px] md:w-[250px] lg:w-[300px] border-[2px] rounded-md flex  justify-around items-center'>
        <img src={image} className='h-[80px] w-[80px] rounded-full'/>
@@ -443,21 +448,21 @@ const AlumniData = [
     "branch": "CSE",
     "current_position": "Lead Data Scientist, Wells Fargo",
     "year_of_graduation": 2008,
-    "image": "image_url"
+    "image": saimadhu
   },
   {
     "name": "Narasimha Rao Manuka",
     "branch": "CSE",
     "current_position": "Lead Engineer, KiddeFenwal",
     "year_of_graduation": 2008,
-    "image": "image_url"
+    "image": NarasimhaRao
   },
   {
     "name": "Ch. Srikanth",
     "branch": "CHEM",
     "current_position": "Deputy Manager, ITC",
     "year_of_graduation": 2008,
-    "image": "image_url"
+    "image": SrikanthCh
   },
   {
     "name": "M. Suresh Babu",
@@ -471,7 +476,7 @@ const AlumniData = [
     "branch": "CHEM",
     "current_position": "Assistant Manager, HPCL",
     "year_of_graduation": 2008,
-    "image": "image_url"
+    "image": vijayKrishna
   },
   {
     "name": "Aurifur Rehman Mohammed",

@@ -72,7 +72,7 @@ const UpComingEvents = () => {
             </button>
           </div>
           <div className="flex font-semibold text-[#4573A1]">
-            Oct 15
+            March 22,23 2025
           </div>
           <div className="flex text-xl font-bold">
             Home coming
