@@ -69,59 +69,128 @@
 import React from "react";
 import TeamCard from "./CoreTeamCard";
 import "./CoreTeam.css";
-import Nikhil from "../../assets/CoreTeam/Nikhil.jpg"
+import Nikhil from "../../assets/CoreTeam/nikhil.png"
+import { CiCirclePlus } from "react-icons/ci";
+// import image from "../../../assets/webteam/sribabu.png";
+import bgm from "../../assets/webteam/bgm.png";
+import hoverbg from "../../assets/webteam/hoverbg.png"
+import { FaFacebookF } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { RiInstagramLine } from "react-icons/ri";
+import akshay from "../../assets/CoreTeam/akshay.png"
+import anudeep from "../../assets/CoreTeam/anudeep.png"
+import aravind from "../../assets/CoreTeam/ara.png"
+import eswar from "../../assets/CoreTeam/eswar.png"
+import gopi from "../../assets/CoreTeam/gopi.png"
+import maruthi from "../../assets/CoreTeam/maruthi.png"
+import siva from "../../assets/CoreTeam/siva.png"
 
-const teamMembers = [
-  { name: "Nikhileswara Rao Sulake", title: "PRESIDENT", Branch: "CSE",
-    //  image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",
-    image:Nikhil,
-    linkedin:"https://linkedin.com",
-     logo:"fas fa-laptop"}, 
-
-  { name: "Sai Manikanta Eswar Machara", title: "VICE PRESIDENT", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFxWtaWfT3dxw/profile-displayphoto-shrink_800_800/B4EZVMDDOwHMAc-/0/1740737628800?e=1746057600&v=beta&t=MrqLEg_q5cWR2kQRxqubL9scyijMTQf3BH5xww4YvKo",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
-
-  { name: "Aravind Pyil", title: "VICE PRESIDENT", Branch: "ECE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-broadcast-tower"},
-  { name: "Sri Babu Mandraju", title: "WEB TEAM LEAD", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5635AQE9TwJAOhfzZw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696139734447?e=1741341600&v=beta&t=YqFyTl7wgnryftOcjQ0GrTFKFvaLSfBh7uclJEKLfVI",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
-
-  { name: "Siva Teja Reddy Annapureddy", title: "HR", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
-
-  // { name: "Mannepuri Chandrika", title: "HR", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFkg9JQIq5HxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724823842191?e=1746057600&v=beta&t=bn-AslfD6sxF5qJYsgjOzLOPU-s1HNUmASQGmMVxL6U",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
-
-  { name: "Hari Dharshan raj gorle", title: "PHOTOGRAPHY", Branch: "ECE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-broadcast-tower"},
-
-  { name: "Anudeep dondapati", title: "DESIGN", Branch: "ECE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-broadcast-tower"},
-
-  { name: "UdayCherri", title: "CYBER SECURITY", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
-
-
-  { name: "Gude Maruthi Kumar", title: "UI/UX DESIGNER", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFj4qnVRrgiDg/profile-displayphoto-shrink_800_800/B4EZRQmBjrGgAg-/0/1736518934765?e=1746057600&v=beta&t=nKwP_6Iq2sm8zke3m9MBPz5MYSRGpr8S_kBX2R1D7Xg",linkedin:"https://www.linkedin.com/in/gude-maruthi-kumar-16005b2b8",logo:"fas fa-laptop"},
-
-  { name: "Akshay Hanok", title: "VIDEO EDITOR", Branch: "EEE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-bolt"},
-
-  { name: "Chandra Siddhardha", title: "SOCIAL MEDIA MANAGER", Branch: "EEE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-bolt"}
-
-];
-
-const Team = () => {
+const CoreTeam = () => {
+  const team = [
+    // { id: 1, Name: "Nikhileswara Rao Sulake", role: "President",image:Nikhil },
+    { id: 1, Name: "Aravind pyli ", role: "Vice President",image:aravind },
+    { id: 2, Name: "D.ANUDEEP", role: "Graphic Designer",image:anudeep},
+    { id: 3, Name: "T.Akshay Hanok", role: "Video Editing Lead" ,image:akshay},
+    { id: 4, Name: "Eswar", role: "Core Team Member" ,image:eswar},
+    { id: 5, Name: "G.Maruthi Kumar", role: "UI/UX lead",image:maruthi },
+    { id: 6, Name: "Gopi Jagadheesh Mahamkali ", role: "Core Team Member" ,image:gopi},
+    { id: 7, Name: "Annapureddy Siva Teja Reddy ", role: "HR" ,image:siva},
+  ];
   return (
-    <section className="team-section">
-      <div className="team-grid">
-        {teamMembers.map((member, index) => (
-          <TeamCard
+    <div className="  mt-[110px] ">
+            <h2 className="text-[#172554] text-3xl text-center py-[30px] font-bold">CORE TEAM</h2>
+            <div
+            className="task-card relative scale-[0.8] h-[419px] w-[243px] md:h-[401px] px-[20px] md:w-[300px] 
+                        group duration-150 after:absolute bg-cover bg-center 
+                        flex flex-col justify-start items-center rounded-xl overflow-hidden mx-auto"
+            style={{
+              backgroundImage: `url(${bgm})`,
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundImage = `url(${hoverbg})`)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundImage = `url(${bgm})`)}
+           
+          >
+          
+              <h3 className="text-center text-white text-[20px] mb-[7px] pt-[10px] font-bold text-wrap">
+              Nikhileswara Rao Sulake
+              </h3>
+              <span className="text-[18px] text-[#fe7524] text-center">
+                President
+              </span>
+              <img
+                src={Nikhil}
+                className="absolute duration-150 bottom-0 group-hover:translate-x-[30px]"
+              />
+              <div className="icons absolute left-[20px] bottom-[20px] gap-2">
+                <div className="socialmedia flex flex-col gap-2 opacity-0 scale-y-0 transition-all duration-200 ease-in pl-1 group-hover:opacity-100 group-hover:scale-y-100 group-hover:animate-fold-out animate-fold-in">
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <RiInstagramLine />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <BsTwitterX />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <FaLinkedinIn />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <FaFacebookF />
+                  </div>
+                </div>
+                <span className="text-white text-[50px]">
+                  <CiCirclePlus />
+                </span>
+              </div>
+            </div>
+      <div className="  flex justify-center items-center p-4 flex-wrap gap-[30px] flex-shrink-0 ">
+        {team.map((item, index) => {
+          return (
+            <div
+            className="task-card relative scale-[0.8] h-[419px] w-[243px] md:h-[401px] px-[20px] md:w-[300px] 
+                        group duration-150 after:absolute bg-cover bg-center 
+                        flex flex-col justify-start items-center rounded-xl overflow-hidden"
+            style={{
+              backgroundImage: `url(${bgm})`,
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundImage = `url(${hoverbg})`)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundImage = `url(${bgm})`)}
             key={index}
-            name={member.name}
-            title={member.title}
-            branch = {member.Branch}
-            image={member.image}
-            linkedin={member.linkedin}
-            logo={member.logo}
-
-            
-          />
-        ))}
+          >
+          
+              <h3 className="text-center text-white text-[20px] mb-[7px] pt-[10px] font-bold text-wrap">
+                {item.Name}
+              </h3>
+              <span className="text-[18px] text-[#fe7524] text-center">
+                {item.role}
+              </span>
+              <img
+                src={item.image}
+                className="absolute duration-150 bottom-0 group-hover:translate-x-[30px]"
+              />
+              <div className="icons absolute left-[20px] bottom-[20px] gap-2">
+                <div className="socialmedia flex flex-col gap-2 opacity-0 scale-y-0 transition-all duration-200 ease-in pl-1 group-hover:opacity-100 group-hover:scale-y-100 group-hover:animate-fold-out animate-fold-in">
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <RiInstagramLine />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <BsTwitterX />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <FaLinkedinIn />
+                  </div>
+                  <div className="h-[40px] w-[40px] bg-gradient-to-r from-purpleCustom via-pinkCustom to-orangeCustom rounded-full text-white text-[24px] flex justify-center items-center">
+                    <FaFacebookF />
+                  </div>
+                </div>
+                <span className="text-white text-[50px]">
+                  <CiCirclePlus />
+                </span>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 };
-
-export default Team;
+export default CoreTeam;
