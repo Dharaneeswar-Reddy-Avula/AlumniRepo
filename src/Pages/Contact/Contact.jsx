@@ -7,7 +7,7 @@ const Contact = () => {
     <div>
         <HeroContact />
         <SecondContact />
-        <Faculty_Contact/>
+        {/* <Faculty_Contact/> */}
     </div>
   )
 }

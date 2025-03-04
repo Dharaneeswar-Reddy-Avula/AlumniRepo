@@ -21,7 +21,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <div className='p-[20px]  rounded-xl mt-[50px] md:mt-[80px]'>
+    <div className='md:p-[20px]  rounded-xl mt-[50px] md:mt-[80px]'>
     <Swiper
       pagination={{
         dynamicBullets: true,

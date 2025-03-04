@@ -25,13 +25,13 @@ const Homehero = () => {
 
        </div>
        <div className="flex flex-col md:border-blue-950 h-[50px] md:border-r-4 ml-[10px] md:ml-[0px]">
-        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:ml-[-60px]">68000+</div>
+        <div className="font-bold text-blue-950 text-4xl md:mr-[40px] lg:ml-[-60px]">19000+</div>
         <div className="ml-[10px] font-bold md:mr-[40px] lg:ml-[-60px]">Alumni</div>
         
 
        </div>
        <div className="flex flex-col mt-[20px] md:mt-[0px] lg:mr-[20px]">
-        <div className="font-bold text-blue-950 text-4xl lg:ml-[-50px]">10,000+</div>
+        <div className="font-bold text-blue-950 text-4xl lg:ml-[-50px]">7,000+</div>
         <div className=" font-bold lg:ml-[-50px]">Placements</div>
 
        </div>

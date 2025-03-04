@@ -12,6 +12,7 @@ import HomeHeroBelow from '../../Components/HomeHeroBelow'
 import Announcement from '../../Components/Announcement';
 import DistinguishedAlumni from '../../Components/DistinguishedAlumni';
 import LatestNews from '../../Components/LatestNews';
+import DirectorMessage from "./DirectorMessage"
 const Home = () => {
   return (
     <div className=''>
@@ -20,12 +21,13 @@ const Home = () => {
      
       </div>
       <LatestNews />
+      <DirectorMessage/>
       <ProudGraduates />
       <div className="flex flex-col md:flex-row w-full mt-8 md:justify-center lg:justify-around items-center  px-4 gap-[20px]">
       <Announcement />
       <DistinguishedAlumni />
     </div>
-      <Testimonals />
+      {/* <Testimonals /> */}
       <HomeAbout />
       <Network />
       <HomeEvents />

@@ -41,8 +41,8 @@ const Awards = () => {
       title: "Smart India Hackathon 2024 - Winners",
       organizer: "Government of India",
       prize: "1,00,000",
-      date: "August 15-16, 2024",
-      venue: "IIT Delhi",
+      date: " 11-12 December 2024",
+      venue: "Rungta college of Engineering, Bhilai,Chattisgarh",
       participants: 10000,
     },
     {

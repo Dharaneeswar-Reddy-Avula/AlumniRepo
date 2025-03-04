@@ -81,10 +81,11 @@ const teamMembers = [
   { name: "Sai Manikanta Eswar Machara", title: "VICE PRESIDENT", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFxWtaWfT3dxw/profile-displayphoto-shrink_800_800/B4EZVMDDOwHMAc-/0/1740737628800?e=1746057600&v=beta&t=MrqLEg_q5cWR2kQRxqubL9scyijMTQf3BH5xww4YvKo",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
   { name: "Aravind Pyil", title: "VICE PRESIDENT", Branch: "ECE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-broadcast-tower"},
+  { name: "Sri Babu Mandraju", title: "WEB TEAM LEAD", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5635AQE9TwJAOhfzZw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696139734447?e=1741341600&v=beta&t=YqFyTl7wgnryftOcjQ0GrTFKFvaLSfBh7uclJEKLfVI",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
   { name: "Siva Teja Reddy Annapureddy", title: "HR", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
-  { name: "Mannepuri Chandrika", title: "HR", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFkg9JQIq5HxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724823842191?e=1746057600&v=beta&t=bn-AslfD6sxF5qJYsgjOzLOPU-s1HNUmASQGmMVxL6U",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
+  // { name: "Mannepuri Chandrika", title: "HR", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFkg9JQIq5HxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724823842191?e=1746057600&v=beta&t=bn-AslfD6sxF5qJYsgjOzLOPU-s1HNUmASQGmMVxL6U",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
   { name: "Hari Dharshan raj gorle", title: "PHOTOGRAPHY", Branch: "ECE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-broadcast-tower"},
 
@@ -92,7 +93,6 @@ const teamMembers = [
 
   { name: "UdayCherri", title: "CYBER SECURITY", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5603AQHHV90zscTW3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729918300922?e=1746057600&v=beta&t=kGCZ37fH5IKsntmLSCjpbZtYz64YNUmJNE4A6TXdAgM",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
-  { name: "Sri Babu Mandraju", title: "WEB TEAM LEAD", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D5635AQE9TwJAOhfzZw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696139734447?e=1741341600&v=beta&t=YqFyTl7wgnryftOcjQ0GrTFKFvaLSfBh7uclJEKLfVI",linkedin:"https://linkedin.com",logo:"fas fa-laptop"},
 
   { name: "Gude Maruthi Kumar", title: "UI/UX DESIGNER", Branch: "CSE", image:"https://media.licdn.com/dms/image/v2/D4E03AQFj4qnVRrgiDg/profile-displayphoto-shrink_800_800/B4EZRQmBjrGgAg-/0/1736518934765?e=1746057600&v=beta&t=nKwP_6Iq2sm8zke3m9MBPz5MYSRGpr8S_kBX2R1D7Xg",linkedin:"https://www.linkedin.com/in/gude-maruthi-kumar-16005b2b8",logo:"fas fa-laptop"},
 

@@ -48,6 +48,7 @@ import Twogallery from "./Pages/About/Gallery/Twogallery";
 import Collagedays from "./Pages/About/Gallery/Collagedays";
 import Festival from "./Pages/About/Gallery/Festival";
 import Video from "./Pages/About/Gallery/Video";
+import './App.css'
 const App = () => {
   return (
     <Router>

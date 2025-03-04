@@ -49,13 +49,7 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": Brahmi
   },
-  {
-    "name": "Narasimha Rao Yenugula",
-    "branch": "CIVIL",
-    "current_position": "Senior Design Specialist, Cyient",
-    "year_of_graduation": 2008,
-    "image": Narasimha
-  },
+ 
   {
     "name": "B. Manoj",
     "branch": "CSE",
@@ -84,13 +78,13 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": SrikanthCh
   },
-  {
-    "name": "M. Suresh Babu",
-    "branch": "CHEM",
-    "current_position": "Assistant Manager, Pidilite Industry",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "M. Suresh Babu",
+  //   "branch": "CHEM",
+  //   "current_position": "Assistant Manager, Pidilite Industry",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Vijay Krishna Malluri",
     "branch": "CHEM",
@@ -98,13 +92,13 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": vijayKrishna
   },
-  {
-    "name": "Aurifur Rehman Mohammed",
-    "branch": "MECH",
-    "current_position": "Azure Data Engineer",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Aurifur Rehman Mohammed",
+  //   "branch": "MECH",
+  //   "current_position": "Azure Data Engineer",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "P. Subbalakshmi",
     "branch": "CHEM",
@@ -126,13 +120,13 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": RaghuRamReddy
   },
-  {
-    "name": "Darala Suman",
-    "branch": "MECH",
-    "current_position": "Scientific Officer 'E', NPCL",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Darala Suman",
+  //   "branch": "MECH",
+  //   "current_position": "Scientific Officer 'E', NPCL",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Annam Venkatesh Babu",
     "branch": "MECH",
@@ -140,13 +134,13 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": venkateshbabu
   },
-  {
-    "name": "Sateesh Kumar Injaratu",
-    "branch": "ECE",
-    "current_position": "Qualcomm Senior Manager, Bangalore",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Sateesh Kumar Injaratu",
+  //   "branch": "ECE",
+  //   "current_position": "Qualcomm Senior Manager, Bangalore",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "B. Suresh",
     "branch": "MME",
@@ -154,13 +148,13 @@ const rawAlumniData = [
     "year_of_graduation": 2008,
     "image": bandisuresh
   },
-  {
-    "name": "Linga Murthy",
-    "branch": "MECH",
-    "current_position": "GKN Aerospace Engine Private Limited - Research Engineer",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Linga Murthy",
+  //   "branch": "MECH",
+  //   "current_position": "GKN Aerospace Engine Private Limited - Research Engineer",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Kasula Divya Teja",
     "branch": "ECE",
