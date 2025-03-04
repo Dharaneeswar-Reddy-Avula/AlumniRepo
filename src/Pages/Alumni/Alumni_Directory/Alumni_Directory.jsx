@@ -8,7 +8,7 @@ import Brahmi from "../../../assets/Top20/Brahmi.jpg";
 import Narasimha from "../../../assets/Top20/Narasimha.jpg";
 import Manoj from "../../../assets/Top20/Manoj.jpg";
 import subbalakshmi from "../../../assets/Top20/subbalakshmi.jpg";
-import bandisuresh from "../../../assets/Top20/suresh bandi.jpg";
+import bandisuresh from "../../../assets/Top20/sureshbandi.jpg";
 import venkateshbabu from "../../../assets/Top20/venkateshbabu.jpg";
 import RaghuRamReddy from "../../../assets/Top20/RaghuRamReddy.jpg";
 import Satyanarayana from "../../../assets/Top20/Satyanarayana.jpg";

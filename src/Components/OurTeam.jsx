@@ -60,12 +60,16 @@ import Siva from "../assets/Faculty/Siva Sir MME.jpg";
 import Ganesh from "../assets/Faculty/ganesh Sir -civil.jpg";
 import Anila from "../assets/Faculty/Anila Mam-chem.jpg";
 
+import MLRao from"../assets/Faculty/MLRao Sir CSE.jpg";
+import Priyanka from "../assets/Faculty/priyanka mam ece.jpg";
+import Praveen from "../assets/Faculty/Praveen Sir ECE.jpg"
+
 const OurTeam = () => {
   const data = [
-    { name: "Mr. Mahalakshmi Rao", position: "Assistant Professor (C)", Department: "Computer Science and Engineering", img: "" },
+    { name: "Mr. Mahalakshmi Rao", position: "Assistant Professor (C)", Department: "Computer Science and Engineering", img: MLRao },
     { name: "Ms. Mathe Jerusha Blessy", position: "Assistant Professor (C)", Department: "Computer Science and Engineering", img: blessy },
-    { name: "Ms. Yenni Priyanka", position: "Assistant Professor (C)", Department: "Electronics and Communications Engineering", img: "" },
-    { name: "Mr. Praveen", position: "Assistant Professor (C)", Department: "Electronics and Communications Engineering", img: "" },
+    { name: "Ms. Yenni Priyanka", position: "Assistant Professor (C)", Department: "Electronics and Communications Engineering", img: Priyanka },
+    { name: "Mr. Praveen", position: "Assistant Professor (C)", Department: "Electronics and Communications Engineering", img:Praveen },
     { name: "Dr. Jyothilal Nayak Bharothu", position: "Assistant Professor", Department: "Electrical and Electronics Engineering", img: Jyothilal },
     { name: "Dr. U. Pavani", position: "Assistant Professor (C)", Department: "Mechanical Engineering", img: Pavani },
     { name: "Mr. Maduru Ganesh", position: "Assistant Professor (C)", Department: "Civil Engineering", img: Ganesh },
