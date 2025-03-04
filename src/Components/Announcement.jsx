@@ -7,22 +7,22 @@ const Announcement = () => {
       sendor: "Office of Alumni Affairs - RGUKT NUZVID",
       position: "PROJECT ASSISTANT",
       address: "at Rajiv Gandhi University of Knowledge Technologies",
-      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now.",
+      description:"ANNOUNCEMENT: ETERNOX - Never Ending Bond 🎉Dear Alumni, it's time to reunite, relive, and rejoice! We are excited to introduce ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid, a tradition celebrating the everlasting bond among Rajgirians. From this year onwards, ETERNOX will be an annual event, bringing together alumni to cherish memories and reconnect. ETERNOX 2025 is specially dedicated to the 2008 batch of RGUKT-Nuzvid, offering a chance to revisit old friendships and relive the journey that shaped us. Join us on 22nd - 23rd March 2025 at RGUKT-Nuzvid Campus for an unforgettable reunion. Confirm your participation now and stay tuned for more updates in Sacha Veda!"
     },
-    {
-      profile: img,
-      sendor: "Office of Alumni Affairs - RGUKT NUZVID",
-      position: "PROJECT ASSISTANT",
-      address: "at Rajiv Gandhi University of Knowledge Technologies",
-      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now.",
-    },
-    {
-        profile: img,
-        sendor: "Office of Alumni Affairs - RGUKT NUZVID",
-        position: "PROJECT ASSISTANT",
-        address: "at Rajiv Gandhi University of Knowledge Technologies",
-      description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now."
-      },
+    // {
+    //   profile: img,
+    //   sendor: "Office of Alumni Affairs - RGUKT NUZVID",
+    //   position: "PROJECT ASSISTANT",
+    //   address: "at Rajiv Gandhi University of Knowledge Technologies",
+    //   description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now.",
+    // },
+    // {
+    //     profile: img,
+    //     sendor: "Office of Alumni Affairs - RGUKT NUZVID",
+    //     position: "PROJECT ASSISTANT",
+    //     address: "at Rajiv Gandhi University of Knowledge Technologies",
+    //   description:"📢 ANNOUNCEMENT: ETERNOX –Never Ending Bond 🎉 Dear Alumni,It's time to reunite, relive, and rejoice! Join us for ETERNOX, our grand Alumni Homecoming Event at RGUKT-Nuzvid. Reconnect with friends, share memories, and celebrate the journey! 📅 22nd – 23rd March | 📍 RGUKT-Nuzvid Campus Don't miss this unforgettable reunion! Confirm your participation now."
+    //   },
   ];
   return (
    

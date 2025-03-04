@@ -13,6 +13,7 @@ import Announcement from '../../Components/Announcement';
 import DistinguishedAlumni from '../../Components/DistinguishedAlumni';
 import LatestNews from '../../Components/LatestNews';
 import DirectorMessage from "./DirectorMessage"
+import IARMessage from '../About/AlumniAssociation/IARMessage';
 const Home = () => {
   return (
     <div className=''>
@@ -22,6 +23,7 @@ const Home = () => {
       </div>
       <LatestNews />
       <DirectorMessage/>
+      <IARMessage/>
       <ProudGraduates />
       <div className="flex flex-col md:flex-row w-full mt-8 md:justify-center lg:justify-around items-center  px-4 gap-[20px]">
       <Announcement />

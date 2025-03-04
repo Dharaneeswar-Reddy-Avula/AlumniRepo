@@ -3,79 +3,79 @@ import img from "../assets/logo.png";
 const DistinguishedAlumni = () => {
   const alumni = [
     {
-        profile: img,
+      
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+      
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+      
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+      
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 
     },
     {
-        profile: img,
+       
         name: '5R1848u',
         position:'BlockChain and Full Stack Developer'
 

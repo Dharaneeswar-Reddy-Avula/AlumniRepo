@@ -38,18 +38,18 @@ const Hero = () => {
       modules={[Navigation, Pagination, Autoplay]}
       className="mySwiper"
     >
-    
-      <SwiperSlide><img src={AB} className=' rounded-xl block w-full max-w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={I3} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={lib} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={Entrance} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={Gate} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={bank2} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={Hostels} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={Yogasala} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={Hospital} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={library} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
-      <SwiperSlide><img src={sklm} className='rounded-xl block max-w-full w-full h-[200px] md:h-[550px] object-contain md:object-cover' /></SwiperSlide>
+      
+      <SwiperSlide><img src={AB} className=' rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={I3} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={lib} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={Entrance} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={Gate} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={bank2} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={Hostels} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={Yogasala} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={Hospital} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={library} className='rounded-xl' /></SwiperSlide>
+      <SwiperSlide><img src={sklm} className='rounded-xl' /></SwiperSlide>
     </Swiper>
   </div>
   )
