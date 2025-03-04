@@ -1,86 +1,127 @@
 import React from "react";
 import img from "../assets/logo.png";
+
+import Divya from "../assets/Top20/Divya.jpg";
+import Brahmi from "../assets/Top20/Brahmi.jpg";
+import Harshith from "../assets/Top20/Harshith.jpg";
+import Manoj from "../assets/Top20/Manoj.jpg";
+import Narasimha from "../assets/Top20/Narasimha.jpg";
+import NarasimhaRao from "../assets/Top20/NarasimhaRao.jpg";
+import RaghuRamReddy from "../assets/Top20/RaghuRamReddy.jpg";
+import Ramana from "../assets/Top20/Ramana.jpg";
+import saimadhu from "../assets/Top20/saimadhu.jpg";
+import Satyanarayana from "../assets/Top20/Satyanarayana.jpg";
+import siva from "../assets/Top20/siva.jpg";
+import SrikanthCh from "../assets/Top20/SrikanthCh.jpg";
+import subbalakshmi from "../assets/Top20/subbalakshmi.jpg";
+import suresh_bandi from "../assets/Top20/sureshbandi.jpg";
+import venkateshbabu from "../assets/Top20/venkateshbabu.jpg";
+import vijayKrishna from "../assets/Top20/vijayKrishna.jpg";
+
 const DistinguishedAlumni = () => {
   const alumni = [
     {
-      
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: Ramana,
+        name: "Chintakayala Ramanna",
+        position: "Assistant Director, Film Industry"
     },
     {
-      
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: siva,
+        name: "Siva V",
+        position: "Deputy General Manager, Highways & Transport"
     },
     {
-      
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: Brahmi,
+        name: "Dr. Mukkanti Veera Bramha",
+        position: "Head of Faculty, NIT AP"
     },
     {
-      
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: Narasimha,
+        name: "Narasimha Rao Yenugula",
+        position: "Senior Design Specialist, Cyient"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: Manoj,
+        name: "B. Manoj",
+        position: "Senior Data Scientist, Ixigo"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: saimadhu,
+        name: "Sai Madhu Polamuri",
+        position: "Lead Data Scientist, Wells Fargo"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: NarasimhaRao,
+        name: "Narasimha Rao Manuka",
+        position: "Lead Engineer, KiddeFenwal"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: SrikanthCh,
+        name: "Ch. Srikanth",
+        position: "Deputy Manager, ITC"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: suresh_bandi,
+        name: "M. Suresh Babu",
+        position: "Assistant Manager, Pidilite Industry"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: vijayKrishna,
+        name: "Vijay Krishna Malluri",
+        position: "Assistant Manager, HPCL"
+    },
+    // {
+    //     profile:"" ,
+    //     name: "Aurifur Rehman Mohammed",
+    //     position: "Azure Data Engineer"
+    // },
+    {
+        profile: subbalakshmi,
+        name: "P. Subbalakshmi",
+        position: "Program Manager, Amazon"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: Satyanarayana,
+        name: "Kokkirapati VV Satyanarayana",
+        position: "Post Doctoral Researcher (In South Korea)"
     },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: RaghuRamReddy,
+        name: "Raghu Ram Reddy Pilli",
+        position: "ISRO, URSC Scientist"
     },
+    // {
+    //     profile: "image_url",
+    //     name: "Darala Suman",
+    //     position: "Scientific Officer 'E', NPCL"
+    // },
     {
-       
-        name: '5R1848u',
-        position:'BlockChain and Full Stack Developer'
-
+        profile: venkateshbabu,
+        name: "Annam Venkatesh Babu",
+        position: "Reserve Bank of India (RBI) Assistant,Bangalore"
     },
-  ];
+    // {
+    //     profile: "image_url",
+    //     name: "Sateesh Kumar Injaratu",
+    //     position: "Qualcomm Senior Manager, Bangalore"
+    // },
+    {
+        profile: suresh_bandi,
+        name: "B. Suresh",
+        position: "Assistant Professor (MNIT Jaipur)"
+    },
+    // {
+    //     profile: "image_url",
+    //     name: "Linga Murthy",
+    //     position: "GKN Aerospace Engine Private Limited - Research Engineer"
+    // },
+    {
+        profile: Divya,
+        name: "Kasula Divya Teja",
+        position: "Manager at Deloitte, Hyderabad"
+    }
+];
+
   return (
    
     <div className="w-full md:w-[45%]  border bg-white shadow-lg rounded-md">
