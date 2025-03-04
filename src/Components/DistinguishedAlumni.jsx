@@ -98,7 +98,7 @@ const DistinguishedAlumni = () => {
     {
         profile: venkateshbabu,
         name: "Annam Venkatesh Babu",
-        position: "Reserve Bank of India (RBI) Assistant, Bangalore"
+        position: "Reserve Bank of India (RBI) Assistant,Bangalore"
     },
     // {
     //     profile: "image_url",
