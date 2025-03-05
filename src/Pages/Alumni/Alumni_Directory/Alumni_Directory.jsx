@@ -3,9 +3,8 @@ import { motion } from "framer-motion"
 import cramana from "../../../assets/Top20/Ramana.jpg";
 
 import siva from "../../../assets/Top20/siva.jpg"
-// import siva from "../../../assets/Top20/siva.jpg";
+import Baskar from "../../../assets/Top20/Baskar.jpeg";
 import Brahmi from "../../../assets/Top20/Brahmi.jpg";
-import Narasimha from "../../../assets/Top20/Narasimha.jpg";
 import Manoj from "../../../assets/Top20/Manoj.jpg";
 import subbalakshmi from "../../../assets/Top20/subbalakshmi.jpg";
 import bandisuresh from "../../../assets/Top20/sureshbandi.jpg";
@@ -13,13 +12,16 @@ import venkateshbabu from "../../../assets/Top20/venkateshbabu.jpg";
 import RaghuRamReddy from "../../../assets/Top20/RaghuRamReddy.jpg";
 import Satyanarayana from "../../../assets/Top20/Satyanarayana.jpg";
 import Divya from "../../../assets/Top20/Divya.jpg";
-// import saimadhu from "../../../../assets/Top20/saimadhu.jpg";
+import harshith from "../../../assets/Top20/harshith.jpg";
 import saimadhu from "../../../assets/Top20/saimadhu.jpg"
 import NarasimhaRao from "../../../assets/Top20/NarasimhaRao.jpg";
 import SrikanthCh from "../../../assets/Top20/SrikanthCh.jpg";
 import vijayKrishna from "../../../assets/Top20/vijayKrishna.jpg"
+import surya from "../../../assets/Top20/surya.jpg"
+
+
 const AlumniCard = ({ name, branch, domain, year_of_graduation, image }) => (
-  <div className='h-[100px] md:w-[250px] lg:w-[300px] border-[2px] rounded-md flex  justify-around items-center'>
+  <div className='h-[100px] md:w-[250px] lg:w-[300px] border-[2px] rounded-md flex gap-[30px] items-center '>
        <img src={image} className='h-[80px] w-[80px] rounded-full'/>
        <div className="flex flex-col">
        <h2 ><span className="font-bold">{name}</span>{" "} 
@@ -71,12 +73,12 @@ const Alumni_Directory = () => {
   const filteredAlumni = useMemo(() => {
     return AlumniData.filter((alumni) => {
       const yearMatch = filters.years.length === 0 || filters.years.includes(alumni.year_of_graduation.toString())
-      const departmentMatch = filters.departments.length === 0 || filters.departments.includes(alumni.department)
+      const departmentMatch = filters.departments.length === 0 || filters.departments.includes(alumni.branch)
       const domainMatch = filters.domains.length === 0 || filters.domains.includes(alumni.domain)
       const searchMatch =
         searchTerm === "" ||
         alumni.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        alumni.department.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        alumni.branch.toLowerCase().includes(searchTerm.toLowerCase()) ||
         alumni.domain.toLowerCase().includes(searchTerm.toLowerCase())
 
       return yearMatch && departmentMatch && domainMatch && searchMatch
@@ -195,219 +197,22 @@ const year_of_graduation = [
   "2024",
 ]
 
-// const Alumni_data = [
-//   {
-//     name: "Aarav Patel",
-//     department: "CSE",
-//     domain: "Software Development",
-//     year_of_graduation: 2019,
-//     profile_pic: "https://randomuser.me/api/portraits/men/1.jpg",
-//   },
-//   {
-//     name: "Meera Sharma",
-//     department: "ECE",
-//     domain: "Embedded Systems",
-//     year_of_graduation: 2018,
-//     profile_pic: "https://randomuser.me/api/portraits/women/2.jpg",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     department: "Mechanical",
-//     domain: "Robotics",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/men/3.jpg",
-//   },
-//   {
-//     name: "Priya Singh",
-//     department: "Civil",
-//     domain: "Structural Engineering",
-//     year_of_graduation: 2017,
-//     profile_pic: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     name: "Kiran Desai",
-//     department: "CSE",
-//     domain: "Cybersecurity",
-//     year_of_graduation: 2021,
-//     profile_pic: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     name: "Anjali Verma",
-//     department: "EEE",
-//     domain: "Renewable Energy Systems",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-//   {
-//     name: "Rohit Agarwal",
-//     department: "Chemical",
-//     domain: "Process Engineering",
-//     year_of_graduation: 2016,
-//     profile_pic: "https://randomuser.me/api/portraits/men/7.jpg",
-//   },
-//   {
-//     name: "Neha Gupta",
-//     department: "MME",
-//     domain: "Material Science",
-//     year_of_graduation: 2022,
-//     profile_pic: "https://randomuser.me/api/portraits/women/8.jpg",
-//   },
-//   {
-//     name: "Vikram Rao",
-//     department: "CSE",
-//     domain: "Data Science",
-//     year_of_graduation: 2014,
-//     profile_pic: "https://randomuser.me/api/portraits/men/9.jpg",
-//   },
-//   {
-//     name: "Sneha Kapoor",
-//     department: "ECE",
-//     domain: "Telecommunication",
-//     year_of_graduation: 2019,
-//     profile_pic: "https://randomuser.me/api/portraits/women/10.jpg",
-//   },
-//   {
-//     name: "Arjun Nair",
-//     department: "Mechanical",
-//     domain: "Automotive Engineering",
-//     year_of_graduation: 2023,
-//     profile_pic: "https://randomuser.me/api/portraits/men/11.jpg",
-//   },
-//   {
-//     name: "Divya Mishra",
-//     department: "Civil",
-//     domain: "Urban Planning",
-//     year_of_graduation: 2015,
-//     profile_pic: "https://randomuser.me/api/portraits/women/12.jpg",
-//   },
-//   {
-//     name: "Siddharth Jain",
-//     department: "EEE",
-//     domain: "Power Systems",
-//     year_of_graduation: 2018,
-//     profile_pic: "https://randomuser.me/api/portraits/men/13.jpg",
-//   },
-//   {
-//     name: "Pooja Mehta",
-//     department: "Chemical",
-//     domain: "Environmental Engineering",
-//     year_of_graduation: 2024,
-//     profile_pic: "https://randomuser.me/api/portraits/women/14.jpg",
-//   },
-//   {
-//     name: "Rahul Bose",
-//     department: "MME",
-//     domain: "Mining and Metallurgy",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/men/15.jpg",
-//   },
-//   {
-//     name: "Aarav Patel",
-//     department: "CSE",
-//     domain: "Software Development",
-//     year_of_graduation: 2019,
-//     profile_pic: "https://randomuser.me/api/portraits/men/1.jpg",
-//   },
-//   {
-//     name: "Meera Sharma",
-//     department: "ECE",
-//     domain: "Embedded Systems",
-//     year_of_graduation: 2018,
-//     profile_pic: "https://randomuser.me/api/portraits/women/2.jpg",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     department: "Mechanical",
-//     domain: "Robotics",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/men/3.jpg",
-//   },
-//   {
-//     name: "Priya Singh",
-//     department: "Civil",
-//     domain: "Structural Engineering",
-//     year_of_graduation: 2017,
-//     profile_pic: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     name: "Kiran Desai",
-//     department: "CSE",
-//     domain: "Cybersecurity",
-//     year_of_graduation: 2021,
-//     profile_pic: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     name: "Anjali Verma",
-//     department: "EEE",
-//     domain: "Renewable Energy Systems",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-//   {
-//     name: "Rohit Agarwal",
-//     department: "Chemical",
-//     domain: "Process Engineering",
-//     year_of_graduation: 2016,
-//     profile_pic: "https://randomuser.me/api/portraits/men/7.jpg",
-//   },
-//   {
-//     name: "Neha Gupta",
-//     department: "MME",
-//     domain: "Material Science",
-//     year_of_graduation: 2022,
-//     profile_pic: "https://randomuser.me/api/portraits/women/8.jpg",
-//   },
-//   {
-//     name: "Vikram Rao",
-//     department: "CSE",
-//     domain: "Data Science",
-//     year_of_graduation: 2014,
-//     profile_pic: "https://randomuser.me/api/portraits/men/9.jpg",
-//   },
-//   {
-//     name: "Sneha Kapoor",
-//     department: "ECE",
-//     domain: "Telecommunication",
-//     year_of_graduation: 2019,
-//     profile_pic: "https://randomuser.me/api/portraits/women/10.jpg",
-//   },
-//   {
-//     name: "Arjun Nair",
-//     department: "Mechanical",
-//     domain: "Automotive Engineering",
-//     year_of_graduation: 2023,
-//     profile_pic: "https://randomuser.me/api/portraits/men/11.jpg",
-//   },
-//   {
-//     name: "Divya Mishra",
-//     department: "Civil",
-//     domain: "Urban Planning",
-//     year_of_graduation: 2015,
-//     profile_pic: "https://randomuser.me/api/portraits/women/12.jpg",
-//   },
-//   {
-//     name: "Siddharth Jain",
-//     department: "EEE",
-//     domain: "Power Systems",
-//     year_of_graduation: 2018,
-//     profile_pic: "https://randomuser.me/api/portraits/men/13.jpg",
-//   },
-//   {
-//     name: "Pooja Mehta",
-//     department: "Chemical",
-//     domain: "Environmental Engineering",
-//     year_of_graduation: 2024,
-//     profile_pic: "https://randomuser.me/api/portraits/women/14.jpg",
-//   },
-//   {
-//     name: "Rahul Bose",
-//     department: "MME",
-//     domain: "Mining and Metallurgy",
-//     year_of_graduation: 2020,
-//     profile_pic: "https://randomuser.me/api/portraits/men/15.jpg",
-//   },
-// ];
+
 const AlumniData = [
+  {
+    "name": "Baskar Rao Chintada",
+    "branch": "ECE",
+    "current_position": "AI and signal/image analysis scientist at MGH and Harvard Medical School",
+    "year_of_graduation": 2008,
+    "image": Baskar
+  },
+  {
+    "name": "Harshith Rajam",
+    "branch": "ECE",
+    "current_position": "Assistant Director, Film Industry",
+    "year_of_graduation": 2008,
+    "image": harshith
+  },
   {
     "name": "Chintakayala Ramanna",
     "branch": "CHEMICAL",
@@ -429,13 +234,7 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": Brahmi
   },
-  {
-    "name": "Narasimha Rao Yenugula",
-    "branch": "CIVIL",
-    "current_position": "Senior Design Specialist, Cyient",
-    "year_of_graduation": 2008,
-    "image": Narasimha
-  },
+  
   {
     "name": "B. Manoj",
     "branch": "CSE",
@@ -464,13 +263,13 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": SrikanthCh
   },
-  {
-    "name": "M. Suresh Babu",
-    "branch": "CHEM",
-    "current_position": "Assistant Manager, Pidilite Industry",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "M. Suresh Babu",
+  //   "branch": "CHEM",
+  //   "current_position": "Assistant Manager, Pidilite Industry",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Vijay Krishna Malluri",
     "branch": "CHEM",
@@ -478,13 +277,13 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": vijayKrishna
   },
-  {
-    "name": "Aurifur Rehman Mohammed",
-    "branch": "MECH",
-    "current_position": "Azure Data Engineer",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Aurifur Rehman Mohammed",
+  //   "branch": "MECH",
+  //   "current_position": "Azure Data Engineer",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "P. Subbalakshmi",
     "branch": "CHEM",
@@ -506,13 +305,13 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": RaghuRamReddy
   },
-  {
-    "name": "Darala Suman",
-    "branch": "MECH",
-    "current_position": "Scientific Officer 'E', NPCL",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Darala Suman",
+  //   "branch": "MECH",
+  //   "current_position": "Scientific Officer 'E', NPCL",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Annam Venkatesh Babu",
     "branch": "MECH",
@@ -520,13 +319,13 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": venkateshbabu
   },
-  {
-    "name": "Sateesh Kumar Injaratu",
-    "branch": "ECE",
-    "current_position": "Qualcomm Senior Manager, Bangalore",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Sateesh Kumar Injaratu",
+  //   "branch": "ECE",
+  //   "current_position": "Qualcomm Senior Manager, Bangalore",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "B. Suresh",
     "branch": "MME",
@@ -534,20 +333,27 @@ const AlumniData = [
     "year_of_graduation": 2008,
     "image": bandisuresh
   },
-  {
-    "name": "Linga Murthy",
-    "branch": "MECH",
-    "current_position": "GKN Aerospace Engine Private Limited - Research Engineer",
-    "year_of_graduation": 2008,
-    "image": "image_url"
-  },
+  // {
+  //   "name": "Linga Murthy",
+  //   "branch": "MECH",
+  //   "current_position": "GKN Aerospace Engine Private Limited - Research Engineer",
+  //   "year_of_graduation": 2008,
+  //   "image": "image_url"
+  // },
   {
     "name": "Kasula Divya Teja",
     "branch": "ECE",
     "current_position": "Manager at Deloitte, Hyderabad",
     "year_of_graduation": 2008,
     "image": Divya
-  }
+  },
+  {
+    "name":"Surya Kumar Chukkala",
+    "branch": "ECE",
+    "current_position": " Deputy Superintendent of Jails at Central Prison Visakhapatnam",
+    "year_of_graduation": 2008,
+    "image": surya
+  },
 ];
 export default Alumni_Directory
 

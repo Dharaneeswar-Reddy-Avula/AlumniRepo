@@ -85,17 +85,22 @@ import eswar from "../../assets/CoreTeam/eswar.png"
 import gopi from "../../assets/CoreTeam/gopi.png"
 import maruthi from "../../assets/CoreTeam/maruthi.png"
 import siva from "../../assets/CoreTeam/siva.png"
-
+import siddu from "../../assets/CoreTeam/siddu.png"
+import hari from "../../assets/CoreTeam/hari.png"
 const CoreTeam = () => {
   const team = [
     // { id: 1, Name: "Nikhileswara Rao Sulake", role: "President",image:Nikhil },
-    { id: 1, Name: "Aravind pyli ", role: "Vice President",image:aravind },
-    { id: 2, Name: "D.ANUDEEP", role: "Graphic Designer",image:anudeep},
-    { id: 3, Name: "T.Akshay Hanok", role: "Video Editing Lead" ,image:akshay},
-    { id: 4, Name: "Eswar", role: "Core Team Member" ,image:eswar},
-    { id: 5, Name: "G.Maruthi Kumar", role: "UI/UX lead",image:maruthi },
-    { id: 6, Name: "Gopi Jagadheesh Mahamkali ", role: "Core Team Member" ,image:gopi},
+    { id: 1, Name: "Sai Manikanta Eswar Machara", role: "Vice President" ,image:eswar},
+    { id: 2, Name: "Aravind pyli ", role: "Vice President",image:aravind },
+    { id: 3, Name: "D.ANUDEEP", role: "Graphic Designer",image:anudeep},
+    { id: 4, Name: "T.Akshay Hanok", role: "Video Editing Lead" ,image:akshay},
+    { id: 5, Name: "G.Maruthi Kumar", role: "UI/UX Lead",image:maruthi },
+    { id: 6, Name: "Gopi Jagadheesh Mahamkali ", role: "AI and Content Leaf Lead" ,image:gopi},
     { id: 7, Name: "Annapureddy Siva Teja Reddy ", role: "HR" ,image:siva},
+    { id: 8, Name: "Hari Darshan Raj", role: "Photography Team Lead" ,image:hari},
+    { id: 9, Name: "Siddarth ", role: "Social Media Lead" ,image:siddu},
+
+
   ];
   return (
     <div className="  mt-[110px] ">

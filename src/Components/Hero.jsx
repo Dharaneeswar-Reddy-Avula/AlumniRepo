@@ -9,7 +9,7 @@ import bank2 from "../assets/College/Bank2.webp";
 import Gate from "../assets/College/Gate.webp";
 import sklm from "../assets/College/sklm.webp";
 import Entrance from "../assets/College/Entrance.webp";
-import Hostels from "../assets/College/Hostels.webp";
+import Hostels from "../assets/College/Hostels.jpeg";
 import Yogasala from "../assets/College/Yogasala.webp";
 import library from "../assets/College/library2.webp";
 import lib from "../assets/College/lib.webp";

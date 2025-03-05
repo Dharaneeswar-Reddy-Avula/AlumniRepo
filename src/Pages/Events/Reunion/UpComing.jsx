@@ -86,9 +86,10 @@ const Upcoming = () => {
                 </div>
               </div>
               <div className="px-6 py-4 bg-blue-50">
-                <button className="w-full bg-blue-950 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+               <a href="https://forms.gle/JRjkpbGHY37zDBAg9" target="blank"><button className="w-full bg-blue-950 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
                   Register Now
                 </button>
+                </a> 
               </div>
             </div>
           ))}

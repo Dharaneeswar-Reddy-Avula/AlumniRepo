@@ -21,6 +21,9 @@ import saimadhu from "../../assets/Top20/saimadhu.jpg";
 import NarasimhaRao from "../../assets/Top20/NarasimhaRao.jpg";
 import SrikanthCh from "../../assets/Top20/SrikanthCh.jpg";
 import vijayKrishna from "../../assets/Top20/vijayKrishna.jpg"
+import surya from "../../assets/Top20/surya.jpg"
+import harshith from "../../assets/Top20/harshith.jpg"
+import Baskar from "../../assets/Top20/Baskar.jpeg"
 
 
 
@@ -28,6 +31,20 @@ import vijayKrishna from "../../assets/Top20/vijayKrishna.jpg"
 const placeholderImage = grad;
 
 const rawAlumniData = [
+  {
+    "name": "Baskar Rao Chintada",
+    "branch": "ECE",
+    "current_position": "AI and signal/image analysis scientist at MGH and Harvard Medical School",
+    "year_of_graduation": 2008,
+    "image": Baskar
+  },
+  {
+    "name": "Harshith Rajam",
+    "branch": "ECE",
+    "current_position": "PGP at ISB, Ex - Executive officer , Ex - Immigration officer",
+    "year_of_graduation": 2008,
+    "image": harshith
+  },
   {
     "name": "Chintakayala Ramanna",
     "branch": "CHEM",
@@ -161,7 +178,14 @@ const rawAlumniData = [
     "current_position": "Manager at Deloitte, Hyderabad",
     "year_of_graduation": 2008,
     "image": Divya
-  }
+  },
+  {
+    "name": "Surya Kumar Chukkala",
+    "branch": "ECE",
+    "current_position": " Deputy Superintendent of Jails at Central Prison Visakhapatnam",
+    "year_of_graduation": 2008,
+    "image": surya
+  },
 ];
 
 // Generate alumni data

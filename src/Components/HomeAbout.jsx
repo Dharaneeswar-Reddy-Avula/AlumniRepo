@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic from '../assets/homeabout.png'
+import Pic from '../assets/homeaboutbg.webp'
 import { Link } from 'react-router-dom'
 import { FaArrowCircleRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
@@ -7,7 +7,7 @@ const HomeAbout = () => {
   return (
     <div className='flex  py-10 md:px-20 flex-col md:gap-10 justify-center items-center md:flex-row '>
         <div className='flex justify-center'>
-            <img src={Pic} className='w-[85%]  md:w-[75%] ' />
+            <img src={Pic} className='w-[85%]  md:w-full rounded-lg ' />
         </div>
         <div className='flex flex-col gap-4 w-[85%] md:w-full  lg:w-[60%]'>
             <div className='text-4xl font-bold text-blue-950'>About Us</div>
