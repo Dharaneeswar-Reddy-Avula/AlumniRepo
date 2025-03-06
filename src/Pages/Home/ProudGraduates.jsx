@@ -22,7 +22,7 @@ import NarasimhaRao from "../../assets/Top20/NarasimhaRao.jpg";
 import SrikanthCh from "../../assets/Top20/SrikanthCh.jpg";
 import vijayKrishna from "../../assets/Top20/vijayKrishna.jpg"
 import surya from "../../assets/Top20/surya.jpg"
-import harshith from "../../assets/Top20/harshith.jpg"
+import harshith from "../../assets/Top20/Harshith.jpg"
 import Baskar from "../../assets/Top20/Baskar.jpeg"
 
 

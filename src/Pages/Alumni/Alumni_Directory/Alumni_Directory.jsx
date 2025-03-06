@@ -12,13 +12,12 @@ import venkateshbabu from "../../../assets/Top20/venkateshbabu.jpg";
 import RaghuRamReddy from "../../../assets/Top20/RaghuRamReddy.jpg";
 import Satyanarayana from "../../../assets/Top20/Satyanarayana.jpg";
 import Divya from "../../../assets/Top20/Divya.jpg";
-import harshith from "../../../assets/Top20/harshith.jpg";
 import saimadhu from "../../../assets/Top20/saimadhu.jpg"
 import NarasimhaRao from "../../../assets/Top20/NarasimhaRao.jpg";
 import SrikanthCh from "../../../assets/Top20/SrikanthCh.jpg";
 import vijayKrishna from "../../../assets/Top20/vijayKrishna.jpg"
 import surya from "../../../assets/Top20/surya.jpg"
-
+import harshith from "../../../assets/Top20/Harshith.jpg"
 
 const AlumniCard = ({ name, branch, domain, year_of_graduation, image }) => (
   <div className='h-[100px] md:w-[250px] lg:w-[300px] border-[2px] rounded-md flex gap-[30px] items-center '>
