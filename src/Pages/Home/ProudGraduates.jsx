@@ -228,7 +228,7 @@ const GraduateCard = ({ graduate }) => {
         <img
           src={graduate.image}
           alt={graduate.name}
-          className="object-contain md:max-w-full md:max-h-full"
+          className="object-contain max-w-full max-h-full"
         />
       </div>
       <div className="w-full flex flex-col md:justify-between p-4 md:h-[200px] gap-4">
