@@ -34,7 +34,7 @@ const WebTeam = () => {
     <div className="  mt-[110px] ">
             <h2 className="text-[#172554] text-3xl text-center py-[30px] font-bold">WEB TEAM</h2>
             <div
-            className="task-card relative scale-[0.8] h-[419px] w-[243px] md:h-[401px] px-[20px] md:w-[300px] 
+            className="task-card relative scale-[0.8] h-[419px]  md:h-[401px] px-[20px] md:w-[300px] 
                         group duration-150 after:absolute bg-cover bg-center 
                         flex flex-col justify-start items-center rounded-xl overflow-hidden mx-auto"
             style={{
@@ -75,11 +75,11 @@ const WebTeam = () => {
                 </span>
               </div>
             </div>
-      <div className="  flex justify-center items-center p-4 flex-wrap gap-[30px] flex-shrink-0 ">
+      <div className="  flex justify-center items-center md:p-4 flex-wrap gap-[30px] flex-shrink-0 ">
         {team.map((item, index) => {
           return (
             <div
-            className="task-card relative scale-[0.8] h-[419px] w-[243px] md:h-[401px] px-[20px] md:w-[300px] 
+            className="task-card relative scale-[0.8] h-[419px] w-full md:h-[401px] px-[20px] md:w-[300px] 
                         group duration-150 after:absolute bg-cover bg-center 
                         flex flex-col justify-start items-center rounded-xl overflow-hidden"
             style={{

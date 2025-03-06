@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { FaAngleRight, FaSearch } from "react-icons/fa"
-
+import comingsoon from "../assets/coming soon.jpg"
 const Sponsorship = () => {
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("All")
@@ -18,57 +18,57 @@ const Sponsorship = () => {
       const mockData = [
         {
           id: 1,
-          title: "I2 Hostel",
-          category: "College Infrastructure",
-          fundRaised: 100000,
-          sponsors: 10,
-          startDate: "2024-08-10",
-          image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
         {
           id: 2,
-          title: "Annual Tech Fest",
-          category: "Events",
-          fundRaised: 50000,
-          sponsors: 5,
-          startDate: "2024-09-15",
-          image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
         {
           id: 3,
-          title: "Scholarship Fund",
-          category: "Students",
-          fundRaised: 200000,
-          sponsors: 20,
-          startDate: "2024-07-01",
-          image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
         {
           id: 4,
-          title: "New Library Wing",
-          category: "College Infrastructure",
-          fundRaised: 300000,
-          sponsors: 15,
-          startDate: "2024-10-01",
-          image: "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
         {
           id: 5,
-          title: "Sports Complex",
-          category: "College Infrastructure",
-          fundRaised: 500000,
-          sponsors: 25,
-          startDate: "2024-11-20",
-          image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
         {
           id: 6,
-          title: "Research Grant",
-          category: "Students",
-          fundRaised: 150000,
-          sponsors: 8,
-          startDate: "2024-09-01",
-          image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=400&h=250&q=80",
+          title: "",
+          category: "",
+          fundRaised: "",
+          sponsors: "",
+          startDate: "",
+          image: comingsoon,
         },
       ]
       setSponsorships(mockData)
@@ -140,7 +140,7 @@ const Sponsorship = () => {
             </div>
           </div>
 
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredSponsorships.map((sponsorship) => (
               <div
                 key={sponsorship.id}
@@ -172,9 +172,8 @@ const Sponsorship = () => {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
 
-          <div className="w-full flex justify-center items-center bg-gray-300 opacity-20 h-[50px]">Will Update Soon</div>
         </div>
       </div>
     </div>
