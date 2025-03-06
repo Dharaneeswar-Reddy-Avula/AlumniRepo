@@ -49,7 +49,7 @@ const WebTeam = () => {
                 Sribabu
               </h3>
               <span className="text-[18px] text-[#fe7524] text-center">
-                Manager
+                Web Team Manager
               </span>
               {/* <img
                 src={image}

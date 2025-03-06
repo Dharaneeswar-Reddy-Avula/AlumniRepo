@@ -13,8 +13,13 @@
   height: 100%;
   min-height: 430px;
 }
-
-.graduate-swiper .swiper-slide {
+.graduate-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit:cover;
+}
+ .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;

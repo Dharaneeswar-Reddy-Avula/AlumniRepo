@@ -1,12 +1,12 @@
+
 import React from 'react'
-import news1 from '../assets/news1.jpg'
-import news2 from '../assets/news2.jpg'
-import news3 from '../assets/news3.jpg'
+
 import news4 from '../assets/news4.jpg'
 import { CgArrowTopRight } from "react-icons/cg";
 import event1 from "../assets/event1.jpg"
 import hackathon from "../assets/Hackathon.png"
 import aihackathon from "../assets/AIHackathon.png"
+import achieve4 from "../assets/achieve4.jpg"
 const LatestNews = () => {
     // const data=[
     //     {
@@ -35,7 +35,7 @@ const LatestNews = () => {
         <div className='text-center text-4xl  font-bold text-blue-950'>
             Latest News
         </div>
-        <div className='grid w-[70vw] md:grid-cols-3 grig-cols-1 gap-4 md:grid-rows-2 h-[100vh] md:h-[40vh] lg:h-[65vh] m-auto'>
+        <div className='grid w-full px-[20px] md:w-[70vw] md:grid-cols-3 grig-cols-1 gap-4 md:grid-rows-2  md:h-[40vh] lg:h-[65vh] m-auto'>
             <div className='relative md:row-span-2 rounded-xl overflow-hidden '>
                 <img src={event1} className='w-full h-full ' />
                 <div className='absolute top-0 left-0 w-full justify-between text-white p-4 h-full bg-black bg-opacity-40 flex flex-col'>
@@ -49,7 +49,7 @@ const LatestNews = () => {
                 <img src={hackathon} className='w-full h-full ' />
                 <div className='absolute top-0 left-0 w-full justify-between text-white p-4 h-full bg-black bg-opacity-40 flex flex-col'>
                     <div className='self-end flex flex-row gap-2 items-center font-semibold cursor-pointer'>Read More <CgArrowTopRight/></div>
-                    <div>'Reaching peaks of competion in college hackathon, big fight for first prize</div>
+                    <div className='text-[13px] md:text-[16px]'>'Reaching peaks of competion in college hackathon, big fight for first prize</div>
 
                 </div>
 
@@ -58,16 +58,16 @@ const LatestNews = () => {
                 <img src={aihackathon} className='w-full h-full ' />
                 <div className='absolute top-0 left-0 w-full justify-between text-white p-4 h-full bg-black bg-opacity-40 flex flex-col'>
                     <div className='self-end flex flex-row gap-2 items-center font-semibold cursor-pointer'>Read More <CgArrowTopRight/></div>
-                    <div>'Intel AI Hackathon 2024 - 2nd Runner Up'</div>
+                    <div  className='text-[13px] md:text-[16px] '>'Intel AI Hackathon 2024 - 2nd Runner Up'</div>
 
                 </div>
 
             </div>
             <div className='relative  rounded-xl overflow-hidden '>
-                <img src={news4} className='w-full h-full ' />
+                <img src={achieve4} className='md:w-full md:h-full ' />
                 <div className='absolute top-0 left-0 w-full justify-between text-white p-4 h-full bg-black bg-opacity-40 flex flex-col'>
                     <div className='self-end flex flex-row gap-2 items-center font-semibold cursor-pointer'>Read More <CgArrowTopRight/></div>
-                    <div>'RGUKT reaching new heights'</div>
+                    <div className='text-[13px] md:text-[16px]'>'One of the 75 innovators in BUILD Program by ITIC, IIT Hyderabad.'</div>
 
                 </div>
 

@@ -17,6 +17,7 @@ import subbalakshmi from "../assets/Top20/subbalakshmi.jpg";
 import suresh_bandi from "../assets/Top20/sureshbandi.jpg";
 import venkateshbabu from "../assets/Top20/venkateshbabu.jpg";
 import vijayKrishna from "../assets/Top20/vijayKrishna.jpg";
+import surya from "../assets/Top20/surya.jpg";
 
 const DistinguishedAlumni = () => {
   const alumni = [
@@ -119,7 +120,12 @@ const DistinguishedAlumni = () => {
         profile: Divya,
         name: "Kasula Divya Teja",
         position: "Manager at Deloitte, Hyderabad"
-    }
+    },
+    {
+      profile: surya,
+      name: "Surya Kumar Chukkala",  
+      position: " Deputy Superintendent of Jails at Central Prison Visakhapatnam",    
+    },
 ];
 
   return (
