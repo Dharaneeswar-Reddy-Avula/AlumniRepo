@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { GiAtomCore } from "react-icons/gi";
 import { BsPersonHeart } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import { MdWebhook } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { LuCombine } from "react-icons/lu";
@@ -109,11 +110,11 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className="h-max my-2 flex justify-center items-center">
+          <div className="flex items-center justify-center my-2 h-max">
             <Link to='/'>
-          <div className="hidden lg:flex flex-col justify-center items-center ">
+          <div className="flex-col items-center justify-center hidden lg:flex ">
           
-            <div className="text-md font-bold text-blue-950 ">
+            <div className="font-bold text-md text-blue-950 ">
               ALUMNI ASSOCIATION
             </div>
             <div className="font-semibold">RGUKT-NUZVID</div>
@@ -122,9 +123,9 @@ const Header = () => {
           </div>
         </div>
         
-        <div className="hidden lg:flex flex-row  justify-center items-center gap-4">
+        <div className="flex-row items-center justify-center hidden gap-4 lg:flex">
           {/* Donate */}
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row items-center justify-center">
             <a
               href="#"
               className="text-white font-semibold bg-blue-950 px-2 py-[5px] rounded-md "
@@ -147,7 +148,7 @@ const Header = () => {
           <div className="group flex flex-col  subscription mr-[20px]">
             <img src={bell} className="h-[35px] w-[35px]" />
             {count > 0 && <span className="bell-icon">{count}</span>}
-            <div className="absolute top-10 right-0 hidden group-hover:flex">
+            <div className="absolute right-0 hidden top-10 group-hover:flex">
               <NewNotifications />
             </div>
           </div>
@@ -161,7 +162,7 @@ const Header = () => {
             <div className="group flex flex-col   subscription mr-[20px]">
               <img src={bell} className="h-[35px] w-[35px]" />
               {count > 0 && <span className="bell-icon">{count}</span>}
-              <div className="absolute top-10 -right-4 hidden group-hover:flex">
+              <div className="absolute hidden top-10 -right-4 group-hover:flex">
                 <NewNotifications />
               </div>
             </div>
@@ -184,16 +185,16 @@ const Header = () => {
                       />
                     </Link>
                   </div>
-                  <div className="h-max my-1 flex justify-center items-center">
+                  <div className="flex items-center justify-center my-1 h-max">
             <Link to='/' onClick={() => {
                     tabClick("home");
                   }}>
-          <div className="flex flex-col justify-center items-center ">
+          <div className="flex flex-col items-center justify-center ">
           
-            <div className="text-xs md:text-sm font-bold text-blue-950 ">
+            <div className="text-xs font-bold md:text-sm text-blue-950 ">
               ALUMNI ASSOCIATION
             </div>
-            <div className="font-semibold text-xs md:text-xs">RGUKT-NUZVID</div>
+            <div className="text-xs font-semibold md:text-xs">RGUKT-NUZVID</div>
           </div>
           </Link>
           </div>
@@ -211,7 +212,7 @@ const Header = () => {
                 {/* Home */}
                 <Link
                   to="/home"
-                  className=" cursor-pointer font-semibold text-gray-600 hover:text-blue-950  rounded-md duration-200"
+                  className="font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950"
                   onClick={() => {
                     tabClick("home");
                   }}
@@ -220,9 +221,9 @@ const Header = () => {
                 </Link>
                 {/* About */}
                 <div>
-                  <div className="flex flex-col gap-2 cursor-pointer font-semibold text-gray-600 hover:text-blue-950 w-full py-2 rounded-md duration-200">
+                  <div className="flex flex-col w-full gap-2 py-2 font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950">
                     <div
-                      className="flex flex-row gap-2 items-center"
+                      className="flex flex-row items-center gap-2"
                       onClick={() => tglsubmenu("about")}
                     >
                       <div>About</div>
@@ -238,69 +239,80 @@ const Header = () => {
 
                     {/* Submenu items */}
                     {submenu === "about" && (
-                      <div className="flex flex-col text-sm font-semibold mt-2 rounded-md w-full px-2 py-1 gap-2 bg-gray-100">
+                      <div className="flex flex-col w-full gap-2 px-2 py-1 mt-2 text-sm font-semibold bg-gray-100 rounded-md">
                         <Link
                           to="/alumni_association"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <RiUserCommunityFill className="font-bold" />
                             Alumni Association
                           </div>{" "}
                         </Link>
                         <Link
                           to="/core_team"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <GiAtomCore className="font-bold" />
                             Core Team
                           </div>{" "}
                         </Link>
                         <Link
                           to="/student_volunteers"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <BsPersonHeart className="font-bold" />
                             Department Coordinators
                           </div>{" "}
                         </Link>
                         <Link
-                          to="/web_team"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          to="/volunteers"
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
+                            <BsPerson className="font-bold" />
+                            Volunteers
+                          </div>{" "}
+                        </Link>
+                        <Link
+                          to="/web_team"
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
+                          onClick={() => setIsMenuVisible(false)}
+                        >
+                          {" "}
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <MdWebhook className="font-bold" />
                             Web Team
                           </div>{" "}
                         </Link>
                         <Link
                           to="/gallery"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <GrGallery className="font-bold" />
                             Gallery
                           </div>{" "}
                         </Link>
                         <Link
                           to="/business"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <FaComputer className="font-bold" />
                             Business
                           </div>{" "}
@@ -311,9 +323,9 @@ const Header = () => {
                 </div>
                 {/* Events */}
                 <div>
-                  <div className="flex flex-col gap-2 cursor-pointer font-semibold text-gray-600 hover:text-blue-950 w-full py-2 rounded-md duration-200">
+                  <div className="flex flex-col w-full gap-2 py-2 font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950">
                     <div
-                      className="flex flex-row gap-2 items-center"
+                      className="flex flex-row items-center gap-2"
                       onClick={() => tglsubmenu("events")}
                     >
                       <div>Events</div>
@@ -329,36 +341,36 @@ const Header = () => {
 
                     {/* Submenu items */}
                     {submenu === "events" && (
-                      <div className="flex flex-col text-sm font-semibold mt-2 rounded-md w-full px-2 py-1 gap-2 bg-gray-100">
+                      <div className="flex flex-col w-full gap-2 px-2 py-1 mt-2 text-sm font-semibold bg-gray-100 rounded-md">
                         <Link
                           to="/event_calender"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <SlCalender className="font-bold" />
                             Event Calender
                           </div>{" "}
                         </Link>
                         <Link
                           to="/reunion"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <LuCombine className="font-bold" />
                             Reunion
                           </div>{" "}
                         </Link>
                         <Link
                           to="/sponsership"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <GoSponsorTiers className="font-bold" />
                             Sponserships
                           </div>{" "}
@@ -366,11 +378,11 @@ const Header = () => {
                         
                         <Link
                 to="/chapters"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                 onClick={() => setIsMenuVisible(false)}
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GrChapterAdd className="font-bold" />
                   Chapters
                 </div>{" "}
@@ -381,9 +393,9 @@ const Header = () => {
                 </div>
                 {/* Alumni */}
                 <div>
-                  <div className="flex flex-col gap-2 cursor-pointer font-semibold text-gray-600 hover:text-blue-950 w-full py-2 rounded-md duration-200">
+                  <div className="flex flex-col w-full gap-2 py-2 font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950">
                     <div
-                      className="flex flex-row gap-2 items-center"
+                      className="flex flex-row items-center gap-2"
                       onClick={() => tglsubmenu("alumni")}
                     >
                       <div>Alumni</div>
@@ -399,69 +411,69 @@ const Header = () => {
 
                     {/* Submenu items */}
                     {submenu === "alumni" && (
-                      <div className="flex flex-col text-sm font-semibold mt-2 rounded-md w-full px-2 py-1 gap-2 bg-gray-100">
+                      <div className="flex flex-col w-full gap-2 px-2 py-1 mt-2 text-sm font-semibold bg-gray-100 rounded-md">
                         
                         <Link
                           to="/alumni_directory"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => {
                             setIsMenuVisible(false);
                           }}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <IoPersonSharp className="font-bold" />
                             Alumni Directory
                           </div>{" "}
                         </Link>
                         <Link
                           to="/mentor_ship"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => {
                             setIsMenuVisible(false);
                           }}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <SiMentorcruise className="font-bold" />
                             Mentor Ship
                           </div>{" "}
                         </Link>
                         <Link
                           to="/workshops"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => {
                             setIsMenuVisible(false);
                           }}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <GrWorkshop className="font-bold" />
                             Workshops
                           </div>{" "}
                         </Link>
                         <Link
                           to="/alumni_talks"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => {
                             setIsMenuVisible(false);
                           }}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <RiKakaoTalkFill className="font-bold" />
                             Alumni Talks
                           </div>{" "}
                         </Link>
                         <Link
                           to="/smartid"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => {
                             setIsMenuVisible(false);
                           }}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <FaRegIdCard className="font-bold" />
                             Alumni SMART ID
                           </div>{" "}
@@ -473,9 +485,9 @@ const Header = () => {
                 
                 {/* Updates */}
                 <div>
-                  <div className="flex flex-col gap-2 cursor-pointer font-semibold text-gray-600 hover:text-blue-950 w-full py-2 rounded-md duration-200">
+                  <div className="flex flex-col w-full gap-2 py-2 font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950">
                     <div
-                      className="flex flex-row gap-2 items-center"
+                      className="flex flex-row items-center gap-2"
                       onClick={() => tglsubmenu("updates")}
                     >
                       <div>Updates</div>
@@ -491,47 +503,47 @@ const Header = () => {
 
                     {/* Submenu items */}
                     {submenu === "updates" && (
-                      <div className="flex flex-col text-sm font-semibold mt-2 rounded-md w-full px-2 py-1 gap-2 bg-gray-100">
+                      <div className="flex flex-col w-full gap-2 px-2 py-1 mt-2 text-sm font-semibold bg-gray-100 rounded-md">
                         <Link
                           to="/news_letter"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <FaRegNewspaper className="font-bold" />
                             News Letter
                           </div>{" "}
                         </Link>
                         <Link
                           to="/awards"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <LiaAwardSolid className="font-bold" />
                             RGUKT Awards
                           </div>{" "}
                         </Link>
                         <Link
                           to="/alumni_news"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <LuNewspaper className="font-bold" />
                             Alumni News
                           </div>{" "}
                         </Link>
                         <Link
                           to="/jobs"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <PiStudentBold className="font-bold" />
                             Jobs
                           </div>{" "}
@@ -542,9 +554,9 @@ const Header = () => {
                 </div>
                 {/* Get Involved */}
                 <div>
-                  <div className="flex flex-col gap-2 cursor-pointer font-semibold text-gray-600 hover:text-blue-950 w-full py-2 rounded-md duration-200">
+                  <div className="flex flex-col w-full gap-2 py-2 font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950">
                     <div
-                      className="flex flex-row gap-2 items-center"
+                      className="flex flex-row items-center gap-2"
                       onClick={() => tglsubmenu("getinvolved")}
                     >
                       <div>Get Involved</div>
@@ -560,25 +572,25 @@ const Header = () => {
 
                     {/* Submenu items */}
                     {submenu === "getinvolved" && (
-                      <div className="flex flex-col text-sm font-semibold mt-2 rounded-md w-full px-2 py-1 gap-2 bg-gray-100">
+                      <div className="flex flex-col w-full gap-2 px-2 py-1 mt-2 text-sm font-semibold bg-gray-100 rounded-md">
                         <Link
                           to="/donate"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <RiRefund2Line className="font-bold" />
                             Donate
                           </div>{" "}
                         </Link>
                         <Link
                           to="/contribute"
-                          className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
                         >
                           {" "}
-                          <div className="flex flex-row gap-2 items-center p-1">
+                          <div className="flex flex-row items-center gap-2 p-1">
                             <GrServices className="font-bold" />
                             Contribute
                           </div>{" "}
@@ -591,7 +603,7 @@ const Header = () => {
                 {/* Contact */}
                 <Link
                   to="Contact"
-                  className=" cursor-pointer font-semibold text-gray-600 hover:text-blue-950  rounded-md duration-200"
+                  className="font-semibold text-gray-600 duration-200 rounded-md cursor-pointer hover:text-blue-950"
                   onClick={() => tabClick("contact")}
                 >
                   Contact
@@ -652,73 +664,83 @@ const Header = () => {
             
           </Link>
           {/* About */}
-          <div className="group relative  p-2">
-            <div className="flex  flex-row items-center  gap-2">
+          <div className="relative p-2 group">
+            <div className="flex flex-row items-center gap-2">
               <div
                 className={`cursor-pointer rounded-md duration-200 font-semibold  group-hover:text-white
                     ${tab === "aboutus" ? " text-white" : "text-gray-400"}`}
               >
                 About
               </div>
-              <FaCaretDown className="group-hover:rotate-180 group-hover:text-white text-gray-400 duration-300" />
+              <FaCaretDown className="text-gray-400 duration-300 group-hover:rotate-180 group-hover:text-white" />
             </div>
-            <div className="hidden group-hover:flex absolute duration-400 flex-col mt-2 rounded-md w-max px-2 py-1 gap-2 bg-gray-100">
+            <div className="absolute flex-col hidden gap-2 px-2 py-1 mt-2 bg-gray-100 rounded-md group-hover:flex duration-400 w-max">
               <Link
                 to="/alumni_association"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <RiUserCommunityFill className="font-bold" />
                   Alumni Association
                 </div>{" "}
               </Link>
               <Link
                 to="/core_team"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GiAtomCore className="font-bold" />
                   Core Team
                 </div>{" "}
               </Link>
               <Link
                 to="/student_volunteers"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <BsPersonHeart className="font-bold" />
                   Department Coordinators
                   </div>{" "}
               </Link>
               <Link
-                to="/web_team"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                to="/volunteers"
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
+                  <BsPerson className="font-bold" />
+                  Volunteers
+                  </div>{" "}
+              </Link>
+              <Link
+                to="/web_team"
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
+              >
+                {" "}
+                <div className="flex flex-row items-center gap-2 p-1">
                   <MdWebhook className="font-bold" />
                   Web Team
                 </div>{" "}
               </Link>
               <Link
                 to="/gallery"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GrGallery className="font-bold" />
                   Gallery
                 </div>{" "}
               </Link>
               <Link
                 to="/business"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <FaComputer className="font-bold" />
                   Business
                 </div>{" "}
@@ -726,46 +748,46 @@ const Header = () => {
             </div>
           </div>
           {/* Events */}
-          <div className="group relative  p-2">
-            <div className="flex  flex-row items-center  gap-2">
+          <div className="relative p-2 group">
+            <div className="flex flex-row items-center gap-2">
               <div
                 className={`cursor-pointer rounded-md duration-200 font-semibold  group-hover:text-white
                     ${tab === "events" ? " text-white" : "text-gray-400"}`}
               >
                 Events
               </div>
-              <FaCaretDown className="group-hover:rotate-180 group-hover:text-white text-gray-400 duration-300" />
+              <FaCaretDown className="text-gray-400 duration-300 group-hover:rotate-180 group-hover:text-white" />
             </div>
-            <div className="hidden group-hover:flex absolute duration-400 flex-col mt-2 rounded-md w-max px-2 py-1 gap-2 bg-gray-100">
+            <div className="absolute flex-col hidden gap-2 px-2 py-1 mt-2 bg-gray-100 rounded-md group-hover:flex duration-400 w-max">
               <Link
                 to="/event_calender"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                 
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <SlCalender className="font-bold" />
                   Event Calender
                 </div>{" "}
               </Link>
               <Link
                 to="/reunion"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                 
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <LuCombine className="font-bold" />
                   Reunion
                 </div>{" "}
               </Link>
               <Link
                 to="/sponsership"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                 
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GoSponsorTiers className="font-bold" />
                   Sponserships
                 </div>{" "}
@@ -773,11 +795,11 @@ const Header = () => {
               
               <Link
                 to="/chapters"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                 
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GrChapterAdd className="font-bold" />
                   Chapters
                 </div>{" "}
@@ -785,8 +807,8 @@ const Header = () => {
             </div>
           </div>
           {/* Alumni */}
-          <div className="group relative  p-2">
-            <div className="flex  flex-row items-center  gap-2">
+          <div className="relative p-2 group">
+            <div className="flex flex-row items-center gap-2">
               <div
                 className={`cursor-pointer rounded-md duration-200 font-semibold  group-hover:text-white
                     ${
@@ -795,53 +817,53 @@ const Header = () => {
               >
                 Alumni
               </div>
-              <FaCaretDown className="group-hover:rotate-180 group-hover:text-white text-gray-400 duration-300" />
+              <FaCaretDown className="text-gray-400 duration-300 group-hover:rotate-180 group-hover:text-white" />
             </div>
-            <div className="hidden group-hover:flex absolute duration-400 flex-col mt-2 rounded-md w-max px-2 py-1 gap-2 bg-gray-100">
+            <div className="absolute flex-col hidden gap-2 px-2 py-1 mt-2 bg-gray-100 rounded-md group-hover:flex duration-400 w-max">
               
              
-                <Link to='/alumni_directory' className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 ">
-                <div className="flex flex-row gap-2 items-center p-1">
+                <Link to='/alumni_directory' className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 ">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <IoPersonSharp className="font-bold" />
                   Alumni Directory
                 </div>{" "}
               </Link>
               <Link
                 to="/mentor_ship"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <SiMentorcruise className="font-bold" />
                   Mentor Ship
                 </div>{" "}
               </Link>
               <Link
                 to="/workshops"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GrWorkshop className="font-bold" />
                   Workshops
                 </div>{" "}
               </Link>
               <Link
                 to="/alumni_talks"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <RiKakaoTalkFill className="font-bold" />
                   Alumni Talks
                 </div>{" "}
               </Link>
               <Link
                 to="/smartid"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <FaRegIdCard className="font-bold" />
                   Alumni SMART ID
                 </div>{" "}
@@ -851,53 +873,53 @@ const Header = () => {
           
 
           {/* Updates */}
-          <div className="group relative  p-2">
-            <div className="flex  flex-row items-center  gap-2">
+          <div className="relative p-2 group">
+            <div className="flex flex-row items-center gap-2">
               <div
                 className={`cursor-pointer rounded-md duration-200 font-semibold  group-hover:text-white
                     ${tab === "updates" ? " text-white" : "text-gray-400"}`}
               >
                 Updates
               </div>
-              <FaCaretDown className="group-hover:rotate-180 group-hover:text-white text-gray-400 duration-300" />
+              <FaCaretDown className="text-gray-400 duration-300 group-hover:rotate-180 group-hover:text-white" />
             </div>
-            <div className="hidden group-hover:flex absolute duration-400 flex-col mt-2 rounded-md w-max px-2 py-1 gap-2 bg-gray-100">
+            <div className="absolute flex-col hidden gap-2 px-2 py-1 mt-2 bg-gray-100 rounded-md group-hover:flex duration-400 w-max">
               <Link
                 to="/news_letter"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <FaRegNewspaper className="font-bold" />
                   News Letter
                 </div>{" "}
               </Link>
               <Link
                 to="/awards"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <LiaAwardSolid className="font-bold" />
                   RGUKT Awards
                 </div>{" "}
               </Link>
               <Link
                 to="/alumni_news"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <LuNewspaper className="font-bold" />
                   Alumni News
                 </div>{" "}
               </Link>
               <Link
                 to="/jobs"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <PiStudentBold className="font-bold" />
                    Jobs
                 </div>{" "}
@@ -905,33 +927,33 @@ const Header = () => {
             </div>
           </div>
           {/* Get Involved */}
-          <div className="group relative  p-2">
-            <div className="flex  flex-row items-center  gap-2">
+          <div className="relative p-2 group">
+            <div className="flex flex-row items-center gap-2">
               <div
                 className={`cursor-pointer rounded-md duration-200 font-semibold  group-hover:text-white
                     ${tab === "getinvolved" ? " text-white" : "text-gray-400"}`}
               >
                 Get Involved
               </div>
-              <FaCaretDown className="group-hover:rotate-180 group-hover:text-white text-gray-400 duration-300" />
+              <FaCaretDown className="text-gray-400 duration-300 group-hover:rotate-180 group-hover:text-white" />
             </div>
-            <div className="hidden group-hover:flex absolute duration-400 flex-col mt-2 rounded-md w-max px-2 py-1 gap-2 bg-gray-100">
+            <div className="absolute flex-col hidden gap-2 px-2 py-1 mt-2 bg-gray-100 rounded-md group-hover:flex duration-400 w-max">
               <Link
                 to="/donate"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <RiRefund2Line className="font-bold" />
                    Donate
                 </div>{" "}
               </Link>
               <Link
                 to="/contribute"
-                className="text-gray-500 hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 rounded px-2 "
+                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
                 {" "}
-                <div className="flex flex-row gap-2 items-center p-1">
+                <div className="flex flex-row items-center gap-2 p-1">
                   <GrServices className="font-bold" />
                   Contribute
                 </div>{" "}
