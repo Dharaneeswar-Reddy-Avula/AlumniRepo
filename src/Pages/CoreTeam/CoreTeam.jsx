@@ -207,7 +207,7 @@ const coreTeam = [
     role: "Lead",
     category: "Marketing",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgColor: "bg-white"
+    bgColor: "bg-amber-50"
   },
   {
     id: 9,
