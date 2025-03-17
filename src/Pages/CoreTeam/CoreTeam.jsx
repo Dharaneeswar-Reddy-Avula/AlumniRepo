@@ -212,22 +212,8 @@ const coreTeam = [
     linkedin:"https://www.linkedin.com/in/gude-maruthi-kumar-16005b2b8",
     insta:"https://www.instagram.com/maruthi_kumar409?igsh=MW0xazVxY2k0anhrYw=="
   },
-  {
-    id: 7,
-    name: "Gopi Jagadheesh",
-    role: "Head",
-    category: "Marketing",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    bgColor: "bg-amber-50"
-  },
-  {
-    id: 8,
-    name: "Siddarth",
-    role: "Lead",
-    category: "Marketing",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgColor: "bg-amber-50"
-  },
+
+
   {
     id: 9,
     name: "Hari Darshan",
@@ -255,15 +241,6 @@ const coreTeam = [
     image: bala,
     bgColor: "bg-white",
     linkedin:"https://www.linkedin.com/in/u-bala-ankamma-rao-b1aa55339/",
-  },
-
-  {
-    id: 10,
-    name: "Siddarth",
-    role: "Co-Head",
-    category: "Video Production",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgColor: "bg-white"
   },
   {
     id: 11,

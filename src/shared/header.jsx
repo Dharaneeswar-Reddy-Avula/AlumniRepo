@@ -272,7 +272,7 @@ const Header = () => {
                             Department Coordinators
                           </div>{" "}
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/volunteers"
                           className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
@@ -282,7 +282,7 @@ const Header = () => {
                             <BsPerson className="font-bold" />
                             Volunteers
                           </div>{" "}
-                        </Link>
+                        </Link> */}
                         <Link
                           to="/web_team"
                           className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
@@ -704,7 +704,7 @@ const Header = () => {
                   Department Coordinators
                   </div>{" "}
               </Link>
-              <Link
+              {/* <Link
                 to="/volunteers"
                 className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
@@ -713,7 +713,7 @@ const Header = () => {
                   <BsPerson className="font-bold" />
                   Volunteers
                   </div>{" "}
-              </Link>
+              </Link> */}
               <Link
                 to="/web_team"
                 className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
