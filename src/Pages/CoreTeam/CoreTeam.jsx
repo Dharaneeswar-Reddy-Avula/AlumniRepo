@@ -152,6 +152,10 @@ import anudeep from "../../assets/CoreTeam/anudeep.png"
 import sekhar from "../../assets/CoreTeam/sekhar.jpg"
 import jayasri from "../../assets/CoreTeam/jayasri.jpg"
 import daniya from "../../assets/CoreTeam/dhaniya.jpeg"
+import akshay from "../../assets/CoreTeam/Akshay.webp"
+import mohan from "../../assets/CoreTeam/mohan.jpeg"
+import varaprasad from "../../assets/CoreTeam/varaprasad.jpeg"
+
 
 
 
@@ -306,6 +310,33 @@ const coreTeam = [
     image: daniya,
     bgColor: "bg-gray-300",
     linkedin:"https://www.linkedin.com/in/daniya-chandrika?"
+  },
+  {
+    id: 7,
+    name: "Akshay",
+    role: "Member",
+    category: "Video Editing",
+    image: akshay,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/akshay-hanok-bbb221289?"
+  },
+  {
+    id: 8,
+    name: "Vara Prasad",
+    role: "Member",
+    category: "Video Editing",
+    image: varaprasad,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/seelam-venkata-sai-vara-prasad-710020293?"
+  },
+  {
+    id: 9,
+    name: "Mohan",
+    role: "Member",
+    category: "Video Editing",
+    image: mohan,
+    bgColor: "bg-white",
+    linkedin:"https://www.linkedin.com/in/mohan-vinay-raj-66a26a31a?"
   },
   {
     id:13,
