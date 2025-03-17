@@ -135,9 +135,25 @@
 import React, { useState } from 'react';
 import { LinkedinIcon, InstagramIcon } from 'lucide-react';
 import Nikhil from "../../assets/CoreTeam/nikhil.png"
-import Aravind from  "../../assets/CoreTeam/aravind3.jpg"
+import Aravind from  "../../assets/CoreTeam/Aravind3.jpg"
 import Mahesh from "../../assets/CoreTeam/Mahesh.jpg"
+import Shiva from "../../assets/CoreTeam/shiva.jpeg"
 import { color } from 'framer-motion';
+import maruthi from "../../assets/CoreTeam/maruthi2.jpg"
+
+import thanusha from "../../assets/CoreTeam/thanusha.jpg"
+import dani from "../../assets/CoreTeam/dani.jpeg"
+import janaki from "../../assets/CoreTeam/janaki.jpeg"
+import karthik from "../../assets/CoreTeam/karthikj2.jpeg"
+import haridarshan from "../../assets/CoreTeam/hari.jpeg"
+import anandha from "../../assets/CoreTeam/anandha.jpeg"
+import bala from "../../assets/CoreTeam/bala.jpeg"
+import anudeep from "../../assets/CoreTeam/anudeep.png"
+import sekhar from "../../assets/CoreTeam/sekhar.jpg"
+import jayasri from "../../assets/CoreTeam/jayasri.jpg"
+import daniya from "../../assets/CoreTeam/dhaniya.jpeg"
+
+
 
 const president = {
   id: 1,
@@ -147,16 +163,19 @@ const president = {
   image: Nikhil,
   bgColor: "bg-white",
   linkedin: "https://www.linkedin.com/in/nikhileswara-rao-sulake",
+  insta :"https://www.instagram.com/mine_nikhil_rao",
 };
 
 const vicePresidents = [
   {
     id: 2,
-    name: "Sai Manikanta Eswar",
+    name: "Siva Teja Reddy",
     role: "VICE PRESIDENT",
     category: "Leadership",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    bgColor: "bg-gray-300"
+    image: Shiva,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/siva-teja-reddy-annapureddy",
+    insta:"https://www.instagram.com/siva_teja_1419",
   },
   {
     id: 3,
@@ -164,34 +183,34 @@ const vicePresidents = [
     role: "Vice President & CEO",
     category: "Leadership",
     image: Aravind,
-    bgColor: "bg-white"
+    bgColor: "bg-white",
+    linkedin:"https://www.linkedin.com/in/aravind-pyli-914715288/",
+
   },
   {
     id: 4,
-    name: "D.ANUDEEP",
+    name: "Sai Manikanta Eswar",
     role: "VICE PRESIDENT",
     category: "Leadership",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    bgColor: "bg-amber-50"
-  }
+    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/sai-manikanta-eswar-machara",
+    insta:"",
+  },
+
 ];
 
 const coreTeam = [
+
   {
     id: 5,
-    name: "T.Akshay Hanok",
-    role: "Head",
-    category: "UI/UX",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgColor: "bg-white"
-  },
-  {
-    id: 6,
     name: "G.Maruthi Kumar",
-    role: "Co-Head",
+    role: "Lead",
     category: "UI/UX",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    bgColor: "bg-gray-300"
+    image: maruthi,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/gude-maruthi-kumar-16005b2b8",
+    insta:"https://www.instagram.com/maruthi_kumar409?igsh=MW0xazVxY2k0anhrYw=="
   },
   {
     id: 7,
@@ -211,12 +230,33 @@ const coreTeam = [
   },
   {
     id: 9,
-    name: "Gopi Jagadheesh",
-    role: "Head",
+    name: "Hari Darshan",
+    role: "Lead",
     category: "Photography",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    bgColor: "bg-amber-50"
+    image: haridarshan,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/hari-darshan-raj-8a1b3524b",
+    insta:"https://www.instagram.com/hari_darshanraj?utm_source=qr&igsh=MXVnZXY4bmZ1cmRpeQ=="
   },
+  {
+    id: 10,
+    name: "Anandha Varshini",
+    role: "Co-Lead",
+    category: "Photography",
+    image: anandha,
+    bgColor: "bg-white",
+    linkedin:"https://www.linkedin.com/in/anandavarshini-ananthoju-660309297/",
+  },
+  {
+    id: 11,
+    name: "Bala Ankamma",
+    role: "Member",
+    category: "Photography",
+    image: bala,
+    bgColor: "bg-white",
+    linkedin:"https://www.linkedin.com/in/u-bala-ankamma-rao-b1aa55339/",
+  },
+
   {
     id: 10,
     name: "Siddarth",
@@ -227,28 +267,89 @@ const coreTeam = [
   },
   {
     id: 11,
-    name: "Gopi Jagadheesh",
-    role: "Lead",
+    name: "Thanusha",
+    role: "Member",
     category: "HR",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    bgColor: "bg-amber-50"
+    image: thanusha    ,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/thanusha-neerukonda-93baa4291/",
+    insta:"https://www.instagram.com/thanusha_2k5?utm_source=qr&igsh=cTJsdW1icXQwbDht"
   },
   {
     id: 12,
-    name: "Siddarth",
-    role: "Head",
-    category: "Design",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgColor: "bg-white"
+    name: "Danimon",
+    role: "Member",
+    category: "HR",
+    image: dani ,
+    bgColor: "bg-white",
+    linkedin:"https://www.linkedin.com/in/danimon-juvvanapudi-754aa12a4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
+  {
+    id:13,
+    name:"Janaki",
+    role:"Member",
+    category:"HR",
+    image:janaki ,
+    bgColor:"bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/prodduturu-janaki-ram-2438a3287/",
+
+  },
+  {
+    id: 4,
+    name: "D.ANUDEEP",
+    role: "Lead",
+    category: "Graphic",
+    image: anudeep,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/anudeep-dondapati-61b722288/"
+  },
+  {
+    id: 5,
+    name: "Sekhar",
+    role: "Member",
+    category: "Graphic",
+    image: sekhar,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/soma-sekhar-muramulla-459701325?"
+  },
+  {
+    id: 6,
+    name: "Jayasri",
+    role: "Member",
+    category: "Graphic",
+    image: jayasri,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/jayasri-phanitapu-78aa52349?"
+  },
+  {
+    id: 7,
+    name: "Daniya",
+    role: "Member",
+    category: "Graphic",
+    image: daniya,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/daniya-chandrika?"
   },
   {
     id:13,
     name:"Mahesh Karri",
-    role:"Head",
+    role:"Lead",
     category: "Web Team",
     image:Mahesh,
     bgColor:"bg-amber-50",
-  }
+    linkedin:"www.linkedin.com/in/maheshkarri4444",
+    insta:"https://www.instagram.com/mahesh_karri_16?igsh=MWE1emk3NHR2YW4zdA=="
+  },
+  {
+    id:14,
+    name:"Karhik",
+    role:"Co-Lead",
+    category: "Web Team",
+    image:karthik,
+    bgColor:"bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/karthikeya-jidagam-18570b2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+
 ];
 
 const TeamCard = ({ member, isEven = false }) => {
@@ -268,13 +369,14 @@ const TeamCard = ({ member, isEven = false }) => {
           {member.category}
         </p>
         <div className={`flex gap-2 transition-all duration-200 ${isExpanded ? 'h-8 opacity-100 mt-2' : 'h-0 opacity-0'}`}>
-          <LinkedinIcon 
+          <a href={member.linkedin} target="_blank"><LinkedinIcon 
             className="w-5 h-5 transition-colors cursor-pointer hover:text-blue-600"
             onClick={(e) => {
               e.stopPropagation();
               // Add LinkedIn link handling here
             }}
-          />
+          /></a>
+          {member.insta && (          <a href={member.insta} target='_blank'>
           <InstagramIcon 
             className="w-5 h-5 transition-colors cursor-pointer hover:text-pink-600"
             onClick={(e) => {
@@ -282,6 +384,9 @@ const TeamCard = ({ member, isEven = false }) => {
               // Add Instagram link handling here
             }}
           />
+          </a>)}
+
+
         </div>
       </div>
 

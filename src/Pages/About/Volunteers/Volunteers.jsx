@@ -226,7 +226,7 @@ function Volunteers() {
       <div className="w-full max-w-6xl space-y-8">
         {sortedBranches.map((branch) => (
           <div key={branch} className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-blue-800">{branch} Department</h2>
+            <h2 className="mb-4 text-2xl font-bold text-blue-800">{branch} Domain</h2>
             <div className="overflow-x-auto">
               <table className="w-full overflow-hidden border border-collapse border-gray-300 rounded-lg">
                 <thead className="text-white bg-gray-800">

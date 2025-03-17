@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo3.png";
 import { useState } from "react";
 import {useEffect} from "react";
 import { useLocation } from "react-router-dom";
@@ -115,7 +115,7 @@ const Header = () => {
           <div className="flex-col items-center justify-center hidden lg:flex ">
           
             <div className="font-bold text-md text-blue-950 ">
-              ALUMNI ASSOCIATION
+              ALUMNI RELATIONS
             </div>
             <div className="font-semibold">RGUKT-NUZVID</div>
           </div>
@@ -133,13 +133,12 @@ const Header = () => {
               Donate
             </a>
           </div>
-          {/* Sign in/ Sign up */}
           <div>
             <button
               onClick={toggleModal}
               className="font-semibold bg-blue-950 bg-opacity-20 px-2 py-[5px] rounded-md"
             >
-               Sign In / Sign Up
+               Sign In / Up
             </button>
           </div>
           
@@ -627,7 +626,7 @@ const Header = () => {
               className="flex flex-row justify-center items-center text-center font-semibold bg-blue-950 bg-opacity-20 w-full px-2 py-[5px] rounded-md"
               
             >
-               Sign In / Sign Up
+               Sign In / Up
             </button>
           </div>
                 
