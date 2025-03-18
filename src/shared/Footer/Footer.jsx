@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300">
-              Alumni Association
+              Alumni Relations
             </h2>
             <address className="not-italic">
               <p>Rajiv Gandhi University of Knowledge Technologies,</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                   href="mailto:Alumniassociation@rguktn.ac.in"
                   className="hover:text-blue-300 transition-colors duration-300"
                 >
-                  Alumniassociation@rguktn.ac.in
+                  alumni@rguktn.ac.in
                 </a>
               </p>
             </address>
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="border-t border-blue-800 pt-8">
           <div className="flex justify-center items-center text-sm">
             <FaRegCopyright className="mr-2" />
-            <p>2024 ALUMNI ASSOCIATION. All rights reserved.</p>
+            <p>2024 ALUMNI RELATIONS. All rights reserved.</p>
           </div>
         </div>
       </div>

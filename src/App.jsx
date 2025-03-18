@@ -49,6 +49,7 @@ import Collagedays from "./Pages/About/Gallery/Collagedays";
 import Festival from "./Pages/About/Gallery/Festival";
 import Video from "./Pages/About/Gallery/Video";
 import './App.css'
+import Volunteers from "./Pages/About/Volunteers/Volunteers";
 const App = () => {
   return (
     <Router>
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/alumni_association" element={<AlumniAssociation />} />
         <Route path="/core_team" element={<CoreTeam />} />
         <Route path="/student_volunteers" element={<StudentVolunteers />} />
+        <Route path="/volunteers" element={<Volunteers />} />
         <Route path="/web_team" element={<WebTeam />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/event_calender" element={<EventCalender />} />
