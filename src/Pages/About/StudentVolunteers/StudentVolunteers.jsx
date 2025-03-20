@@ -415,13 +415,7 @@ function StudentVolunteers() {
       "Mobile Number": "8919761779",
       "LinkedIn": "none"
     },
-    {
-      "Name": "S SOUMYA",
-      "Year": "E-3",
-      "Branch": "CSE",
-      "Mobile Number": "8374408111",
-      "LinkedIn": "https://www.linkedin.com/in/s-soumya-12141b253"
-    },
+
     {
       "Name": "Yukthesh Chowdary",
       "Year": "E-2",
@@ -436,13 +430,7 @@ function StudentVolunteers() {
       "Mobile Number": "7416634762",
       "LinkedIn": "https://www.linkedin.com/in/tiyyagura-vineela-484716288"
     },
-    {
-      "Name": "Nandakishore Kalavathula",
-      "Year": "E-2",
-      "Branch": "CSE",
-      "Mobile Number": "6304678590",
-      "LinkedIn": "https://www.linkedin.com/in/nandakishore-kalavathula-314307278"
-    },
+
     {
       "Name": "S. Varun Sandesh",
       "Year": "E-3",

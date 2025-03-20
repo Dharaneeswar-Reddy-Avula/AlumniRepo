@@ -143,7 +143,7 @@ import sravani from "../../../assets/CoreTeam/sravani2.png"
 const WebTeam = () => {
   const coreTeam = [
     { id: 1, Name: "Mahesh Karri", role: "Lead", image: mahesh , github:"https://github.com/Maheshkarri4444",linkedin:"https://www.linkedin.com/in/maheshkarri4444",twitter:"https://x.com/maheshkarri4444?t=xjhUeCzb6dtsYan1dFevUQ&s=09"},
-    { id: 2, Name: "Karthik", role: "Co-Lead", image: karthik , linkedin:"https://www.linkedin.com/in/karthikeya-jidagam-18570b2a6?" , twitter:"https://x.com/KJidagam76068?t=_Zhbp-aCY251J7TmC6eAeQ&s=09" , github:"https://github.com/karthik73965"},
+    // { id: 2, Name: "Karthik", role: "Co-Lead", image: karthik , linkedin:"https://www.linkedin.com/in/karthikeya-jidagam-18570b2a6?" , twitter:"https://x.com/KJidagam76068?t=_Zhbp-aCY251J7TmC6eAeQ&s=09" , github:"https://github.com/karthik73965"},
   ];
 
   const team = [
@@ -218,12 +218,12 @@ const WebTeam = () => {
       linkedin: "https://www.linkedin.com/in/santhosh-kumar-002810291/",
       insta: "https://www.instagram.com/santhosh_kumar_itla?igsh=cTc3ZDJ3am55emtu"
     },
-    { 
-      id: 9, 
-      Name: "Sravani", 
-      role: "UI/UX",
-      image: sravani
-    },
+    // { 
+    //   id: 9, 
+    //   Name: "Sravani", 
+    //   role: "UI/UX",
+    //   image: sravani
+    // },
     // { 
     //   id: 10, 
     //   Name: "Sribabu Mandraju", 
@@ -310,9 +310,9 @@ const WebTeam = () => {
       </div>
 
       {/* <h2 className="text-[#172554] text-3xl text-center py-[30px] font-bold">WEB TEAM</h2> */}
-      {/* <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <TeamCard name="Sribabu" role="Team Manager" image={Dharaneeswar} github={"https://github.com/Sribabu-Mandraju/"} linkedin={"https://www.linkedin.com/in/sribabu-mandraju-590524233/"} twitter={"https://x.com/5R1B4BU"}/>
-      </div> */}
+      </div>
 
       <div className="flex justify-center items-center md:p-4 flex-wrap gap-[30px] flex-shrink-0">
         {team.map((member) => (

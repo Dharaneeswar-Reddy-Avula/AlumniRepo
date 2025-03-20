@@ -16,27 +16,27 @@ import grid4 from "../../../assets/grid4.png";
 import grid5 from "../../../assets/grid5.png";
 import grid6 from "../../../assets/grid6.png";
 import grid7 from "../../../assets/grid7.png";
+import im1 from "../../../assets/Alumni Meet/1.jpg"
 
 const PastReunions = () => {
   const [activeTab, setActiveTab] = useState("reunions");
 
   const events = [
     {
-      title: "Alumni Reunion - 2018",
-      date: "Jan 30, 2025",
-      location: "Venue XYZ",
-      time: "2:15-5:15",
-      mem: 250,
-      image: img,
+      title: "Alumni Reunion - 2016",
+      date: "March 30, 2016",
+      location: "RGUKT Nuzvid",
+      mem: 100,
+      image: im1,
     },
-    {
-      title: "Alumni Reunion - 2019",
-      date: "Feb 10, 2025",
-      location: "Venue ABC",
-      time: "2:15-5:15",
-      mem: 500,
-      image: img,
-    },
+    // {
+    //   title: "Alumni Reunion - 2019",
+    //   date: "Feb 10, 2025",
+    //   location: "Venue ABC",
+    //   time: "2:15-5:15",
+    //   mem: 500,
+    //   image: img,
+    // },
   ];
 
   const galleryImages = [grid1, grid2, grid3, grid4, grid5, grid6, grid7];
@@ -77,7 +77,7 @@ const PastReunions = () => {
 
         {activeTab === "reunions" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* {events.map((event, index) => (
+            {events.map((event, index) => (
               <motion.div
                 key={index}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
@@ -96,24 +96,29 @@ const PastReunions = () => {
                     <IoLocationOutline className="mr-2" />
                     <span>{event.location}</span>
                   </div>
-                  <div className="flex items-center text-gray-600 mb-2">
-                    <IoTimeOutline className="mr-2" />
-                    <span>{event.time}</span>
-                  </div>
+                  {event.time && (
+                        <div className="flex items-center text-gray-600 mb-2">
+                           <IoTimeOutline className="mr-2" />
+                            <span>{event.time}</span>
+                        </div>
+                  )}
+
                   <div className="flex items-center text-blue-900 font-semibold">
                     <IoPersonSharp className="mr-2" />
                     <span>{event.mem}+ Attendees</span>
                   </div>
                 </div>
               </motion.div>
-            ))} */}
+            ))}
           </div>
         )}
-        <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
-          Will Update Soon
+
+                <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
+          Eternox 2k25 will be updated soon
         </div>
 
-        {activeTab === "gallery" && (
+        {/* {activeTab === "gallery" && (
+
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
             initial={{ opacity: 0 }}
@@ -135,7 +140,7 @@ const PastReunions = () => {
               </motion.div>
             ))}
           </motion.div>
-        )}
+        )} */}
       </div>
     </div>
   );

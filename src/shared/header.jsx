@@ -464,19 +464,7 @@ const Header = () => {
                             Alumni Talks
                           </div>{" "}
                         </Link>
-                        <Link
-                          to="/smartid"
-                          className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
-                          onClick={() => {
-                            setIsMenuVisible(false);
-                          }}
-                        >
-                          {" "}
-                          <div className="flex flex-row items-center gap-2 p-1">
-                            <FaRegIdCard className="font-bold" />
-                            Alumni SMART ID
-                          </div>{" "}
-                        </Link>
+
                       </div>
                     )}
                   </div>
@@ -857,16 +845,7 @@ const Header = () => {
                   Alumni Talks
                 </div>{" "}
               </Link>
-              <Link
-                to="/smartid"
-                className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
-              >
-                {" "}
-                <div className="flex flex-row items-center gap-2 p-1">
-                  <FaRegIdCard className="font-bold" />
-                  Alumni SMART ID
-                </div>{" "}
-              </Link>
+
             </div>
           </div>
           
