@@ -161,6 +161,7 @@ import mohan from "../../assets/CoreTeam/mohan.jpeg"
 import varaprasad from "../../assets/CoreTeam/varaprasad.jpeg"
 import eswar from "../../assets/CoreTeam/eswar.png"
 import siddu from "../../assets/CoreTeam/siddu.png"
+import sribabu from "../../assets/CoreTeam/examplepic.jpg"
 import sireesha from "../../assets/webteam/sireesha.png"
 import viswadatta from "../../assets/webteam/viswadatta.png"
 
@@ -366,12 +367,12 @@ const coreTeam = [
     linkedin:"www.linkedin.com/in/maheshkarri4444",
     insta:"https://www.instagram.com/mahesh_karri_16?igsh=MWE1emk3NHR2YW4zdA=="
   },
-  // {
-  //   name:"Sribabu" , role:"Team Manager" , category:"Web Team" ,image:Dharaneeswar ,github:"https://github.com/Sribabu-Mandraju/",linkedin:"https://www.linkedin.com/in/sribabu-mandraju-590524233/" ,twitter:"https://x.com/5R1B4BU"
-  // },
+  {
+    id:2, name:"Sribabu" , role:"Team Manager" , category:"Web Team" ,image:sribabu ,github:"https://github.com/Sribabu-Mandraju/",linkedin:"https://www.linkedin.com/in/sribabu-mandraju-590524233/" ,twitter:"https://x.com/5R1B4BU"
+  },
 
       { 
-        id: 2, 
+        id: 3, 
         name: "Dharaneeswar", 
         role: "Fullstack",
         image: Dharaneeswar,
@@ -384,7 +385,7 @@ const coreTeam = [
       },
 
           { 
-            id: 3, 
+            id: 4, 
             name: "Sireesha Sibbala", 
             role: "Fullstack",
             image: sireesha,
@@ -395,7 +396,7 @@ const coreTeam = [
             // twitter: "https://x.com/SireeshaSibbala"
           },
     { 
-      id: 4, 
+      id: 5, 
       Name: "Viswadatta Nidumukkala", 
       role: "Fullstack",
       image: viswadatta,
