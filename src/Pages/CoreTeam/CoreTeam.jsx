@@ -161,6 +161,9 @@ import mohan from "../../assets/CoreTeam/mohan.jpeg"
 import varaprasad from "../../assets/CoreTeam/varaprasad.jpeg"
 import eswar from "../../assets/CoreTeam/eswar.png"
 import siddu from "../../assets/CoreTeam/siddu.png"
+import sireesha from "../../assets/webteam/sireesha.png"
+import viswadatta from "../../assets/webteam/viswadatta.png"
+
 
 
 
@@ -363,20 +366,45 @@ const coreTeam = [
     linkedin:"www.linkedin.com/in/maheshkarri4444",
     insta:"https://www.instagram.com/mahesh_karri_16?igsh=MWE1emk3NHR2YW4zdA=="
   },
-  {
-    name:"Sribabu" , role:"Team Manager" , category:"Web Team" ,image:Dharaneeswar ,github:"https://github.com/Sribabu-Mandraju/",linkedin:"https://www.linkedin.com/in/sribabu-mandraju-590524233/" ,twitter:"https://x.com/5R1B4BU"
-  },
+  // {
+  //   name:"Sribabu" , role:"Team Manager" , category:"Web Team" ,image:Dharaneeswar ,github:"https://github.com/Sribabu-Mandraju/",linkedin:"https://www.linkedin.com/in/sribabu-mandraju-590524233/" ,twitter:"https://x.com/5R1B4BU"
+  // },
+
       { 
         id: 2, 
         name: "Dharaneeswar", 
-        role: "Member",
+        role: "Fullstack",
         image: Dharaneeswar,
         category:"Web Team",
         // github: "https://github.com/Dharaneeswar-Reddy-Avula/",
         linkedin: "https://www.linkedin.com/in/dharaneeswar-reddy-avula-6600912aa/",
+    bgColor:"bg-gray-300",
+
         // twitter: "https://x.com/Dharaneeswar_"
       },
 
+          { 
+            id: 3, 
+            name: "Sireesha Sibbala", 
+            role: "Fullstack",
+            image: sireesha,
+        category:"Web Team",
+    bgColor:"bg-white",
+            // github: "https://github.com/sibbalas/-S31B19",
+            linkedin: "https://www.linkedin.com/in/sireesha-sibbala-b2467631b/",
+            // twitter: "https://x.com/SireeshaSibbala"
+          },
+    { 
+      id: 4, 
+      Name: "Viswadatta Nidumukkala", 
+      role: "Fullstack",
+      image: viswadatta,
+      category:"Web Team",
+    bgColor:"bg-amber-50",
+      // github: "https://github.com/Viswadatta1233",
+      linkedin: "http://www.linkedin.com/in/datta-nidumukkala-00052b232",
+      // twitter: "https://x.com/Datta1074"
+    },
   // {
   //   id:14,
   //   name:"Karhik",

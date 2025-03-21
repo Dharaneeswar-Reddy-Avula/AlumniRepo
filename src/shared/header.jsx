@@ -258,7 +258,7 @@ const Header = () => {
                           {" "}
                           <div className="flex flex-row items-center gap-2 p-1">
                             <GiAtomCore className="font-bold" />
-                            Core Team
+                            Student Body
                           </div>{" "}
                         </Link>
                         <Link
@@ -283,7 +283,7 @@ const Header = () => {
                             Volunteers
                           </div>{" "}
                         </Link> */}
-                        <Link
+                        {/* <Link
                           to="/web_team"
                           className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
                           onClick={() => setIsMenuVisible(false)}
@@ -293,7 +293,7 @@ const Header = () => {
                             <MdWebhook className="font-bold" />
                             Web Team
                           </div>{" "}
-                        </Link>
+                        </Link> */}
                         <Link
                           to="/gallery"
                           className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
@@ -679,7 +679,7 @@ const Header = () => {
                 {" "}
                 <div className="flex flex-row items-center gap-2 p-1">
                   <GiAtomCore className="font-bold" />
-                  Core Team
+                  Student Body
                 </div>{" "}
               </Link>
               <Link
@@ -702,7 +702,7 @@ const Header = () => {
                   Volunteers
                   </div>{" "}
               </Link> */}
-              <Link
+              {/* <Link
                 to="/web_team"
                 className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
               >
@@ -711,7 +711,7 @@ const Header = () => {
                   <MdWebhook className="font-bold" />
                   Web Team
                 </div>{" "}
-              </Link>
+              </Link> */}
               <Link
                 to="/gallery"
                 className="px-2 text-gray-500 rounded hover:text-blue-950 hover:bg-blue-950 hover:bg-opacity-20 "
