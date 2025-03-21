@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// import sivalal from "../../../assets/Faculty/sivalal.jpeg"
 const IARMessage = () => {
   const [showFullMessage, setShowFullMessage] = useState(false);
 
@@ -9,6 +9,7 @@ const IARMessage = () => {
       <div className="md:w-1/3 flex flex-col items-center p-8 bg-white shadow-lg rounded-lg mt-8 md:mt-20">
         <img
           src="http://intranet.rguktn.ac.in/CITADEL/profile/profileimg/medium/RN071116001.jpg"
+          // src={sivalal}
           alt="Mr. K.Sivalal"
           className="w-48 h-49  rounded-lg object-cover"
         />

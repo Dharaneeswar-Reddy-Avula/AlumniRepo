@@ -141,10 +141,10 @@ import sravani from "../../../assets/CoreTeam/sravani.jpg"
 
 
 const WebTeam = () => {
-  const coreTeam = [
-    { id: 1, Name: "Mahesh Karri", role: "Lead", image: mahesh },
-    { id: 2, Name: "Sarah Johnson", role: "Co-Lead", image: karthik },
-  ];
+  // const coreTeam = [
+  //   { id: 1, Name: "Mahesh Karri", role: "Lead", image: mahesh },
+  //   { id: 2, Name: "Sarah Johnson", role: "Co-Lead", image: karthik },
+  // ];
 
   const team = [
     { id: 1, Name: "Dharaneeswar Reddy", role: "Fullstack Developer",image:Dharaneeswar },
