@@ -95,7 +95,7 @@ const Upcoming = () => {
           ))}
 
         </div>
-        <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center'>Will Update Soon</div>
+        {/* <div className='w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center'>Will Update Soon</div> */}
 
 
         {events.length > 3 && (

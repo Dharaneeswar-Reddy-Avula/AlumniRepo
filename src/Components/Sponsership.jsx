@@ -43,33 +43,7 @@ const Sponsorship = () => {
           startDate: "",
           image: comingsoon,
         },
-        {
-          id: 4,
-          title: "",
-          category: "",
-          fundRaised: "",
-          sponsors: "",
-          startDate: "",
-          image: comingsoon,
-        },
-        {
-          id: 5,
-          title: "",
-          category: "",
-          fundRaised: "",
-          sponsors: "",
-          startDate: "",
-          image: comingsoon,
-        },
-        {
-          id: 6,
-          title: "",
-          category: "",
-          fundRaised: "",
-          sponsors: "",
-          startDate: "",
-          image: comingsoon,
-        },
+
       ]
       setSponsorships(mockData)
     }
@@ -103,6 +77,9 @@ const Sponsorship = () => {
           </p>
         </div>
 
+        <div className="w-full h-[50px] bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
+          Hoping Sponserships - Eternox 2k25
+        </div>
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
           <div className="flex flex-wrap justify-between items-center mb-6">
             <div className="flex space-x-2 mb-4 sm:mb-0">

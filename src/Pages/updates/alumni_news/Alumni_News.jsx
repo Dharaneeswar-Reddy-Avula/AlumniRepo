@@ -200,6 +200,7 @@ const Alumni_News = () => {
               </button>
             ))}
           </div>
+
           <div className="relative">
             <input
               type="text"
@@ -210,6 +211,10 @@ const Alumni_News = () => {
             />
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           </div>
+        </div>
+
+        <div className="w-full h-[50px] mb-5 bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
+          Alumni news to be updated after Eternox - 2k25
         </div>
 
         <div className="mb-6 flex flex-col sm:flex-row justify-between items-center">

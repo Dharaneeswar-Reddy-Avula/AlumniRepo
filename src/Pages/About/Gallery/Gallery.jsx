@@ -26,14 +26,17 @@ const Gallery = () => {
     // { id: 3, image: Secondmeet, Event: "Alumni life in Delhi", Items: "5 items" },
     // { id: 4, image: Thirdmeet, Event: "Alumni life in Delhi", Items: "5 items" }
     { id: 1, image: comingsoon},
-    { id: 2, image: comingsoon},
-    { id: 3, image: comingsoon},
-    { id: 4, image: comingsoon},
+    // { id: 2, image: comingsoon},
+    // { id: 3, image: comingsoon},
+    // { id: 4, image: comingsoon},
    
   ];
 
   return (
     <div className="p-[10px] md:p-[30px] lg:p-[50px] mt-[100px] overflow-x-hidden">
+                      <div className="w-full h-[50px] mb-5 bg-gray-300 opacity-20 flex items-center px-[20px] justify-center">
+          Eternox 2k25 will be updated soon
+        </div>
       <div className="flex flex-col md:flex-row gap-[10px]">
         <div className="flex flex-col gap-[4px]">
           <div className="cursor-pointer w-[300px] lg:w-[300px] bg-gradient-to-r from-gray-200 to-gray-300 h-[60px] flex justify-center items-center text-center hover:border-l-4 hover:border-black shadow-md" onClick={() => navigate('/Gallery')}>
