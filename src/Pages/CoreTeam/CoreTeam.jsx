@@ -140,12 +140,16 @@ import Mahesh from "../../assets/CoreTeam/Mahesh.jpg"
 import Shiva from "../../assets/CoreTeam/shiva.jpeg"
 import { color } from 'framer-motion';
 import maruthi from "../../assets/CoreTeam/maruthi2.jpg"
+import Dharaneeswar from "../../assets/webteam/Dharaneeswar_Reddy.png";
+import Sribabu from "../../assets/webteam/Dharaneeswar_Reddy.png";
+
+
 
 import thanusha from "../../assets/CoreTeam/thanusha.jpg"
 import dani from "../../assets/CoreTeam/dani.jpeg"
 import janaki from "../../assets/CoreTeam/janaki.jpeg"
 import karthik from "../../assets/CoreTeam/karthikj2.jpeg"
-import haridarshan from "../../assets/CoreTeam/hari.jpeg"
+import haridarshan from "../../assets/CoreTeam/hari3.jpeg"
 import anandha from "../../assets/CoreTeam/anandha.jpeg"
 import bala from "../../assets/CoreTeam/bala.jpeg"
 import anudeep from "../../assets/CoreTeam/anudeep.png"
@@ -155,6 +159,10 @@ import daniya from "../../assets/CoreTeam/dhaniya.jpeg"
 import akshay from "../../assets/CoreTeam/Akshay.webp"
 import mohan from "../../assets/CoreTeam/mohan.jpeg"
 import varaprasad from "../../assets/CoreTeam/varaprasad.jpeg"
+import eswar from "../../assets/CoreTeam/eswar.png"
+import siddu from "../../assets/CoreTeam/siddu.png"
+import sireesha from "../../assets/webteam/sireesha.png"
+import viswadatta from "../../assets/webteam/viswadatta.png"
 
 
 
@@ -193,19 +201,28 @@ const vicePresidents = [
   },
   {
     id: 4,
-    name: "Sai Manikanta Eswar",
-    role: "VICE PRESIDENT",
-    category: "Leadership",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    bgColor: "bg-gray-300",
-    linkedin:"https://www.linkedin.com/in/sai-manikanta-eswar-machara",
-    insta:"",
+    name: "D.ANUDEEP",
+    role: "Creative Head",
+    category: "Graphic",
+    image: anudeep,
+    bgColor: "bg-amber-50",
+    linkedin:"https://www.linkedin.com/in/anudeep-dondapati-61b722288/"
   },
+
 
 ];
 
 const coreTeam = [
 
+  {
+    id: 5,
+    name: "Sai Manikanta Eswar",
+    role: "Lead",
+    category: "Ai/Prompt",
+    image: eswar,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/sai-manikanta-eswar-machara",
+  },
   {
     id: 5,
     name: "G.Maruthi Kumar",
@@ -276,14 +293,15 @@ const coreTeam = [
 
   },
   {
-    id: 4,
-    name: "D.ANUDEEP",
+    id: 1,
+    name: "Siddardha",
     role: "Lead",
-    category: "Graphic",
-    image: anudeep,
-    bgColor: "bg-amber-50",
-    linkedin:"https://www.linkedin.com/in/anudeep-dondapati-61b722288/"
+    category: "Social Media",
+    image: siddu,
+    bgColor: "bg-gray-300",
+    linkedin:"https://www.linkedin.com/in/chandra-siddhardha-munuru-6b3638277/"
   },
+
   {
     id: 5,
     name: "Sekhar",
@@ -348,15 +366,54 @@ const coreTeam = [
     linkedin:"www.linkedin.com/in/maheshkarri4444",
     insta:"https://www.instagram.com/mahesh_karri_16?igsh=MWE1emk3NHR2YW4zdA=="
   },
-  {
-    id:14,
-    name:"Karhik",
-    role:"Co-Lead",
-    category: "Web Team",
-    image:karthik,
+  // {
+  //   name:"Sribabu" , role:"Team Manager" , category:"Web Team" ,image:Dharaneeswar ,github:"https://github.com/Sribabu-Mandraju/",linkedin:"https://www.linkedin.com/in/sribabu-mandraju-590524233/" ,twitter:"https://x.com/5R1B4BU"
+  // },
+
+      { 
+        id: 2, 
+        name: "Dharaneeswar", 
+        role: "Fullstack",
+        image: Dharaneeswar,
+        category:"Web Team",
+        // github: "https://github.com/Dharaneeswar-Reddy-Avula/",
+        linkedin: "https://www.linkedin.com/in/dharaneeswar-reddy-avula-6600912aa/",
     bgColor:"bg-gray-300",
-    linkedin:"https://www.linkedin.com/in/karthikeya-jidagam-18570b2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+
+        // twitter: "https://x.com/Dharaneeswar_"
+      },
+
+          { 
+            id: 3, 
+            name: "Sireesha Sibbala", 
+            role: "Fullstack",
+            image: sireesha,
+        category:"Web Team",
+    bgColor:"bg-white",
+            // github: "https://github.com/sibbalas/-S31B19",
+            linkedin: "https://www.linkedin.com/in/sireesha-sibbala-b2467631b/",
+            // twitter: "https://x.com/SireeshaSibbala"
+          },
+    { 
+      id: 4, 
+      Name: "Viswadatta Nidumukkala", 
+      role: "Fullstack",
+      image: viswadatta,
+      category:"Web Team",
+    bgColor:"bg-amber-50",
+      // github: "https://github.com/Viswadatta1233",
+      linkedin: "http://www.linkedin.com/in/datta-nidumukkala-00052b232",
+      // twitter: "https://x.com/Datta1074"
+    },
+  // {
+  //   id:14,
+  //   name:"Karhik",
+  //   role:"Co-Lead",
+  //   category: "Web Team",
+  //   image:karthik,
+  //   bgColor:"bg-gray-300",
+  //   linkedin:"https://www.linkedin.com/in/karthikeya-jidagam-18570b2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  // },
 
 ];
 
@@ -460,7 +517,7 @@ function CoreTeam() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="px-4 py-12 mt-10 sm:mt-20 sm:px-6 lg:px-8">
           <h1 className="mb-4 text-4xl font-bold text-center">Meet our</h1>
-          <h2 className="mb-16 text-4xl font-bold text-center">Web Team</h2>
+          <h2 className="mb-16 text-4xl font-bold text-center">Student Body</h2>
           
           <div className="mb-16">
             <div className="flex flex-wrap justify-center gap-8 mb-16 md:gap-16">
