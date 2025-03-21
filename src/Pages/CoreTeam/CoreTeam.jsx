@@ -135,7 +135,7 @@
 import React, { useState } from 'react';
 import { LinkedinIcon, InstagramIcon } from 'lucide-react';
 import Nikhil from "../../assets/CoreTeam/nikhil.png"
-import Aravind from  "../../assets/CoreTeam/Aravind3.jpg"
+import Aravind from  "../../assets/CoreTeam/aravind3.jpg"
 import Mahesh from "../../assets/CoreTeam/Mahesh.jpg"
 import Shiva from "../../assets/CoreTeam/shiva.jpeg"
 import { color } from 'framer-motion';
