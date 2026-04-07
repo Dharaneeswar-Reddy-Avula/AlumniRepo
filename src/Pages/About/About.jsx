@@ -9,7 +9,7 @@ import Cards from "../../Components/Cards";
 // import IARMessage from "../../Pages/About/AlumniAssociation/IARMessage";
 const About = () => {
   return (
-    <div className=" mt-14 md:mt-26 px-3 md:px-10  lg:mt-[115px] ">
+    <div className="mt-14 md:mt-26 px-3 md:px-10  lg:mt-[115px] ">
       <Hero />
       <Description/>
       {/* <Cards /> */}
